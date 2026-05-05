@@ -158,3 +158,15 @@ husnaedi_tbl <-
     date = fix_date(date),
     husnaedisverd = log(husnaedisverd)
   )
+
+
+# 3.0.0 SAVE ----
+
+cpi_tbl |>
+  left_join(coicop_tbl) |>
+  left_join(byggingarvisitala_tbl) |>
+  left_join(import_price_tbl) |>
+  left_join(domestic_tbl) |>
+  left_join(husnaedi_tbl) |>
+
+  write_parquet("data/prices.parquet")

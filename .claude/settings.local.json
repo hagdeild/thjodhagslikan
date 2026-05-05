@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s -I \"https://hms.is/gogn-og-maelabord/visitolur\" -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36\")"
+      "Bash(curl -s -I \"https://hms.is/gogn-og-maelabord/visitolur\" -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36\")",
+      "Bash(Rscript -e ' *)"
     ]
   }
 }
