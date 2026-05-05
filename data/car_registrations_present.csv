@@ -1,0 +1,1151 @@
+period,year,month,import_status,vehicle_class,registrations
+2020-01-01,2020,1,Nýtt,Fólksbifreið (M1),712
+2020-01-01,2020,1,Nýtt,Sendibifreið (N1),127
+2020-01-01,2020,1,Nýtt,Vélsleði,31
+2020-01-01,2020,1,Nýtt,Eftirvagn II (O2),30
+2020-01-01,2020,1,Nýtt,Dráttarvél,23
+2020-01-01,2020,1,Nýtt,Vörubifreið I (N2),13
+2020-01-01,2020,1,Nýtt,Fjór-/sexhjól,10
+2020-01-01,2020,1,Nýtt,Vörubifreið II (N3),10
+2020-01-01,2020,1,Nýtt,Þungt bifhjól,9
+2020-01-01,2020,1,Nýtt,Torfæruhjól,7
+2020-01-01,2020,1,Nýtt,Eftirvagn IV (O4),4
+2020-01-01,2020,1,Nýtt,Hópbifreið II (M3),4
+2020-02-01,2020,2,Nýtt,Fólksbifreið (M1),695
+2020-02-01,2020,2,Nýtt,Sendibifreið (N1),86
+2020-02-01,2020,2,Nýtt,Eftirvagn II (O2),32
+2020-02-01,2020,2,Nýtt,Vélsleði,26
+2020-02-01,2020,2,Nýtt,Dráttarvél,19
+2020-02-01,2020,2,Nýtt,Eftirvagn IV (O4),8
+2020-02-01,2020,2,Nýtt,Vörubifreið II (N3),7
+2020-02-01,2020,2,Nýtt,Vörubifreið I (N2),6
+2020-02-01,2020,2,Nýtt,Torfæruhjól,5
+2020-02-01,2020,2,Nýtt,Fjór-/sexhjól,2
+2020-02-01,2020,2,Nýtt,Hópbifreið II (M3),2
+2020-02-01,2020,2,Nýtt,Þungt bifhjól,2
+2020-02-01,2020,2,Nýtt,Eftirvagn I (O1),1
+2020-02-01,2020,2,Nýtt,Hópbifreið I (M2),1
+2020-03-01,2020,3,Nýtt,Fólksbifreið (M1),1077
+2020-03-01,2020,3,Nýtt,Sendibifreið (N1),88
+2020-03-01,2020,3,Nýtt,Eftirvagn II (O2),49
+2020-03-01,2020,3,Nýtt,Dráttarvél,39
+2020-03-01,2020,3,Nýtt,Þungt bifhjól,16
+2020-03-01,2020,3,Nýtt,Vélsleði,15
+2020-03-01,2020,3,Nýtt,Eftirvagn IV (O4),7
+2020-03-01,2020,3,Nýtt,Fjór-/sexhjól,7
+2020-03-01,2020,3,Nýtt,Vörubifreið II (N3),5
+2020-03-01,2020,3,Nýtt,Vörubifreið I (N2),4
+2020-03-01,2020,3,Nýtt,Torfæruhjól,3
+2020-03-01,2020,3,Nýtt,Létt bifhjól,2
+2020-03-01,2020,3,Nýtt,Eftirvagn III (O3),1
+2020-04-01,2020,4,Nýtt,Fólksbifreið (M1),373
+2020-04-01,2020,4,Nýtt,Eftirvagn II (O2),121
+2020-04-01,2020,4,Nýtt,Sendibifreið (N1),57
+2020-04-01,2020,4,Nýtt,Dráttarvél,51
+2020-04-01,2020,4,Nýtt,Létt bifhjól,31
+2020-04-01,2020,4,Nýtt,Þungt bifhjól,22
+2020-04-01,2020,4,Nýtt,Torfæruhjól,20
+2020-04-01,2020,4,Nýtt,Vörubifreið II (N3),14
+2020-04-01,2020,4,Nýtt,Eftirvagn I (O1),12
+2020-04-01,2020,4,Nýtt,Vörubifreið I (N2),7
+2020-04-01,2020,4,Nýtt,Vélsleði,6
+2020-04-01,2020,4,Nýtt,Fjór-/sexhjól,4
+2020-04-01,2020,4,Nýtt,Eftirvagn IV (O4),2
+2020-05-01,2020,5,Nýtt,Fólksbifreið (M1),515
+2020-05-01,2020,5,Nýtt,Eftirvagn II (O2),263
+2020-05-01,2020,5,Nýtt,Sendibifreið (N1),93
+2020-05-01,2020,5,Nýtt,Létt bifhjól,78
+2020-05-01,2020,5,Nýtt,Dráttarvél,49
+2020-05-01,2020,5,Nýtt,Þungt bifhjól,32
+2020-05-01,2020,5,Nýtt,Eftirvagn I (O1),23
+2020-05-01,2020,5,Nýtt,Vörubifreið I (N2),23
+2020-05-01,2020,5,Nýtt,Eftirvagn IV (O4),12
+2020-05-01,2020,5,Nýtt,Fjór-/sexhjól,7
+2020-05-01,2020,5,Nýtt,Torfæruhjól,7
+2020-05-01,2020,5,Nýtt,Vörubifreið II (N3),5
+2020-05-01,2020,5,Nýtt,Vélsleði,3
+2020-05-01,2020,5,Nýtt,Eftirvagn III (O3),2
+2020-06-01,2020,6,Nýtt,Fólksbifreið (M1),821
+2020-06-01,2020,6,Nýtt,Eftirvagn II (O2),211
+2020-06-01,2020,6,Nýtt,Sendibifreið (N1),84
+2020-06-01,2020,6,Nýtt,Létt bifhjól,56
+2020-06-01,2020,6,Nýtt,Dráttarvél,53
+2020-06-01,2020,6,Nýtt,Þungt bifhjól,25
+2020-06-01,2020,6,Nýtt,Torfæruhjól,19
+2020-06-01,2020,6,Nýtt,Eftirvagn I (O1),13
+2020-06-01,2020,6,Nýtt,Vörubifreið II (N3),10
+2020-06-01,2020,6,Nýtt,Vörubifreið I (N2),6
+2020-06-01,2020,6,Nýtt,Eftirvagn IV (O4),3
+2020-06-01,2020,6,Nýtt,Fjór-/sexhjól,1
+2020-06-01,2020,6,Nýtt,L6,1
+2020-06-01,2020,6,Nýtt,Vélsleði,1
+2020-07-01,2020,7,Nýtt,Fólksbifreið (M1),1483
+2020-07-01,2020,7,Nýtt,Eftirvagn II (O2),140
+2020-07-01,2020,7,Nýtt,Létt bifhjól,110
+2020-07-01,2020,7,Nýtt,Sendibifreið (N1),67
+2020-07-01,2020,7,Nýtt,Dráttarvél,62
+2020-07-01,2020,7,Nýtt,Þungt bifhjól,24
+2020-07-01,2020,7,Nýtt,Torfæruhjól,16
+2020-07-01,2020,7,Nýtt,Eftirvagn IV (O4),13
+2020-07-01,2020,7,Nýtt,Fjór-/sexhjól,11
+2020-07-01,2020,7,Nýtt,Vörubifreið II (N3),11
+2020-07-01,2020,7,Nýtt,Eftirvagn I (O1),8
+2020-07-01,2020,7,Nýtt,Vörubifreið I (N2),6
+2020-07-01,2020,7,Nýtt,Hópbifreið I (M2),2
+2020-07-01,2020,7,Nýtt,Hópbifreið II (M3),2
+2020-07-01,2020,7,Nýtt,Eftirvagn III (O3),1
+2020-08-01,2020,8,Nýtt,Fólksbifreið (M1),597
+2020-08-01,2020,8,Nýtt,Sendibifreið (N1),58
+2020-08-01,2020,8,Nýtt,Eftirvagn II (O2),56
+2020-08-01,2020,8,Nýtt,Dráttarvél,39
+2020-08-01,2020,8,Nýtt,Létt bifhjól,36
+2020-08-01,2020,8,Nýtt,Torfæruhjól,35
+2020-08-01,2020,8,Nýtt,Þungt bifhjól,11
+2020-08-01,2020,8,Nýtt,Fjór-/sexhjól,7
+2020-08-01,2020,8,Nýtt,Hópbifreið I (M2),4
+2020-08-01,2020,8,Nýtt,Vörubifreið I (N2),4
+2020-08-01,2020,8,Nýtt,Eftirvagn IV (O4),3
+2020-08-01,2020,8,Nýtt,Vörubifreið II (N3),3
+2020-08-01,2020,8,Nýtt,Hópbifreið II (M3),1
+2020-09-01,2020,9,Nýtt,Fólksbifreið (M1),1017
+2020-09-01,2020,9,Nýtt,Sendibifreið (N1),76
+2020-09-01,2020,9,Nýtt,Eftirvagn II (O2),60
+2020-09-01,2020,9,Nýtt,Létt bifhjól,43
+2020-09-01,2020,9,Nýtt,Dráttarvél,18
+2020-09-01,2020,9,Nýtt,Fjór-/sexhjól,12
+2020-09-01,2020,9,Nýtt,Torfæruhjól,9
+2020-09-01,2020,9,Nýtt,Vörubifreið II (N3),8
+2020-09-01,2020,9,Nýtt,Þungt bifhjól,8
+2020-09-01,2020,9,Nýtt,Vélsleði,5
+2020-09-01,2020,9,Nýtt,Eftirvagn IV (O4),4
+2020-09-01,2020,9,Nýtt,Vörubifreið I (N2),2
+2020-09-01,2020,9,Nýtt,Eftirvagn I (O1),1
+2020-09-01,2020,9,Nýtt,Hópbifreið II (M3),1
+2020-10-01,2020,10,Nýtt,Fólksbifreið (M1),739
+2020-10-01,2020,10,Nýtt,Sendibifreið (N1),93
+2020-10-01,2020,10,Nýtt,Eftirvagn II (O2),45
+2020-10-01,2020,10,Nýtt,Dráttarvél,26
+2020-10-01,2020,10,Nýtt,Létt bifhjól,18
+2020-10-01,2020,10,Nýtt,Torfæruhjól,15
+2020-10-01,2020,10,Nýtt,Vörubifreið I (N2),7
+2020-10-01,2020,10,Nýtt,Vörubifreið II (N3),5
+2020-10-01,2020,10,Nýtt,Vélsleði,4
+2020-10-01,2020,10,Nýtt,Eftirvagn IV (O4),3
+2020-10-01,2020,10,Nýtt,Þungt bifhjól,3
+2020-10-01,2020,10,Nýtt,L6,2
+2020-10-01,2020,10,Nýtt,Fjór-/sexhjól,1
+2020-10-01,2020,10,Nýtt,Hópbifreið II (M3),1
+2020-11-01,2020,11,Nýtt,Fólksbifreið (M1),557
+2020-11-01,2020,11,Nýtt,Sendibifreið (N1),66
+2020-11-01,2020,11,Nýtt,Létt bifhjól,62
+2020-11-01,2020,11,Nýtt,Eftirvagn II (O2),49
+2020-11-01,2020,11,Nýtt,Dráttarvél,27
+2020-11-01,2020,11,Nýtt,Vélsleði,21
+2020-11-01,2020,11,Nýtt,Vörubifreið II (N3),13
+2020-11-01,2020,11,Nýtt,Torfæruhjól,8
+2020-11-01,2020,11,Nýtt,Vörubifreið I (N2),6
+2020-11-01,2020,11,Nýtt,Þungt bifhjól,3
+2020-11-01,2020,11,Nýtt,Eftirvagn IV (O4),2
+2020-11-01,2020,11,Nýtt,Fjór-/sexhjól,1
+2020-11-01,2020,11,Nýtt,Hópbifreið I (M2),1
+2020-11-01,2020,11,Nýtt,Hópbifreið II (M3),1
+2020-12-01,2020,12,Nýtt,Fólksbifreið (M1),803
+2020-12-01,2020,12,Nýtt,Sendibifreið (N1),102
+2020-12-01,2020,12,Nýtt,Vélsleði,75
+2020-12-01,2020,12,Nýtt,Eftirvagn II (O2),47
+2020-12-01,2020,12,Nýtt,Dráttarvél,19
+2020-12-01,2020,12,Nýtt,Létt bifhjól,9
+2020-12-01,2020,12,Nýtt,Vörubifreið II (N3),9
+2020-12-01,2020,12,Nýtt,Vörubifreið I (N2),8
+2020-12-01,2020,12,Nýtt,Torfæruhjól,7
+2020-12-01,2020,12,Nýtt,Eftirvagn IV (O4),5
+2020-12-01,2020,12,Nýtt,Fjór-/sexhjól,4
+2020-12-01,2020,12,Nýtt,Þungt bifhjól,3
+2021-01-01,2021,1,Nýtt,Fólksbifreið (M1),579
+2021-01-01,2021,1,Nýtt,Sendibifreið (N1),87
+2021-01-01,2021,1,Nýtt,Vélsleði,48
+2021-01-01,2021,1,Nýtt,Eftirvagn II (O2),34
+2021-01-01,2021,1,Nýtt,Dráttarvél,21
+2021-01-01,2021,1,Nýtt,Vörubifreið I (N2),14
+2021-01-01,2021,1,Nýtt,Eftirvagn IV (O4),9
+2021-01-01,2021,1,Nýtt,Vörubifreið II (N3),9
+2021-01-01,2021,1,Nýtt,Þungt bifhjól,9
+2021-01-01,2021,1,Nýtt,Létt bifhjól,8
+2021-01-01,2021,1,Nýtt,Torfæruhjól,6
+2021-01-01,2021,1,Nýtt,Fjór-/sexhjól,5
+2021-01-01,2021,1,Nýtt,L6,4
+2021-01-01,2021,1,Nýtt,Eftirvagn III (O3),1
+2021-01-01,2021,1,Nýtt,Hópbifreið II (M3),1
+2021-02-01,2021,2,Nýtt,Fólksbifreið (M1),554
+2021-02-01,2021,2,Nýtt,Sendibifreið (N1),63
+2021-02-01,2021,2,Nýtt,Eftirvagn II (O2),54
+2021-02-01,2021,2,Nýtt,Dráttarvél,30
+2021-02-01,2021,2,Nýtt,Vörubifreið I (N2),18
+2021-02-01,2021,2,Nýtt,Vélsleði,16
+2021-02-01,2021,2,Nýtt,Létt bifhjól,15
+2021-02-01,2021,2,Nýtt,Torfæruhjól,8
+2021-02-01,2021,2,Nýtt,Fjór-/sexhjól,6
+2021-02-01,2021,2,Nýtt,Vörubifreið II (N3),6
+2021-02-01,2021,2,Nýtt,Þungt bifhjól,6
+2021-02-01,2021,2,Nýtt,Eftirvagn IV (O4),5
+2021-02-01,2021,2,Nýtt,Hópbifreið II (M3),4
+2021-02-01,2021,2,Nýtt,Hópbifreið I (M2),1
+2021-02-01,2021,2,Nýtt,L6,1
+2021-03-01,2021,3,Nýtt,Fólksbifreið (M1),953
+2021-03-01,2021,3,Nýtt,Sendibifreið (N1),114
+2021-03-01,2021,3,Nýtt,Eftirvagn II (O2),107
+2021-03-01,2021,3,Nýtt,Dráttarvél,47
+2021-03-01,2021,3,Nýtt,Létt bifhjól,46
+2021-03-01,2021,3,Nýtt,Þungt bifhjól,16
+2021-03-01,2021,3,Nýtt,Torfæruhjól,15
+2021-03-01,2021,3,Nýtt,Vélsleði,14
+2021-03-01,2021,3,Nýtt,Fjór-/sexhjól,10
+2021-03-01,2021,3,Nýtt,Vörubifreið II (N3),10
+2021-03-01,2021,3,Nýtt,Vörubifreið I (N2),8
+2021-03-01,2021,3,Nýtt,Eftirvagn IV (O4),4
+2021-03-01,2021,3,Nýtt,Eftirvagn I (O1),2
+2021-03-01,2021,3,Nýtt,L6,1
+2021-04-01,2021,4,Nýtt,Fólksbifreið (M1),781
+2021-04-01,2021,4,Nýtt,Eftirvagn II (O2),188
+2021-04-01,2021,4,Nýtt,Sendibifreið (N1),110
+2021-04-01,2021,4,Nýtt,Dráttarvél,66
+2021-04-01,2021,4,Nýtt,Létt bifhjól,25
+2021-04-01,2021,4,Nýtt,Torfæruhjól,23
+2021-04-01,2021,4,Nýtt,Þungt bifhjól,17
+2021-04-01,2021,4,Nýtt,Eftirvagn I (O1),14
+2021-04-01,2021,4,Nýtt,Eftirvagn IV (O4),13
+2021-04-01,2021,4,Nýtt,Vörubifreið I (N2),10
+2021-04-01,2021,4,Nýtt,Fjór-/sexhjól,5
+2021-04-01,2021,4,Nýtt,Vörubifreið II (N3),5
+2021-04-01,2021,4,Nýtt,Vélsleði,4
+2021-04-01,2021,4,Nýtt,Hópbifreið I (M2),1
+2021-04-01,2021,4,Nýtt,Hópbifreið II (M3),1
+2021-04-01,2021,4,Nýtt,L6,1
+2021-05-01,2021,5,Nýtt,Fólksbifreið (M1),1338
+2021-05-01,2021,5,Nýtt,Eftirvagn II (O2),286
+2021-05-01,2021,5,Nýtt,Sendibifreið (N1),127
+2021-05-01,2021,5,Nýtt,Dráttarvél,69
+2021-05-01,2021,5,Nýtt,Létt bifhjól,29
+2021-05-01,2021,5,Nýtt,Torfæruhjól,25
+2021-05-01,2021,5,Nýtt,Vörubifreið II (N3),17
+2021-05-01,2021,5,Nýtt,Eftirvagn I (O1),13
+2021-05-01,2021,5,Nýtt,Fjór-/sexhjól,13
+2021-05-01,2021,5,Nýtt,Þungt bifhjól,12
+2021-05-01,2021,5,Nýtt,Eftirvagn IV (O4),7
+2021-05-01,2021,5,Nýtt,Vörubifreið I (N2),6
+2021-05-01,2021,5,Nýtt,Eftirvagn III (O3),2
+2021-05-01,2021,5,Nýtt,Hópbifreið I (M2),1
+2021-05-01,2021,5,Nýtt,Hópbifreið II (M3),1
+2021-06-01,2021,6,Nýtt,Fólksbifreið (M1),1831
+2021-06-01,2021,6,Nýtt,Eftirvagn II (O2),209
+2021-06-01,2021,6,Nýtt,Sendibifreið (N1),145
+2021-06-01,2021,6,Nýtt,Dráttarvél,61
+2021-06-01,2021,6,Nýtt,Þungt bifhjól,23
+2021-06-01,2021,6,Nýtt,Torfæruhjól,18
+2021-06-01,2021,6,Nýtt,Létt bifhjól,17
+2021-06-01,2021,6,Nýtt,Vörubifreið I (N2),15
+2021-06-01,2021,6,Nýtt,Vörubifreið II (N3),15
+2021-06-01,2021,6,Nýtt,Eftirvagn IV (O4),12
+2021-06-01,2021,6,Nýtt,Fjór-/sexhjól,12
+2021-06-01,2021,6,Nýtt,Eftirvagn I (O1),10
+2021-06-01,2021,6,Nýtt,Hópbifreið II (M3),4
+2021-06-01,2021,6,Nýtt,L6,4
+2021-07-01,2021,7,Nýtt,Fólksbifreið (M1),1742
+2021-07-01,2021,7,Nýtt,Eftirvagn II (O2),130
+2021-07-01,2021,7,Nýtt,Sendibifreið (N1),91
+2021-07-01,2021,7,Nýtt,Dráttarvél,76
+2021-07-01,2021,7,Nýtt,Þungt bifhjól,25
+2021-07-01,2021,7,Nýtt,Vörubifreið II (N3),21
+2021-07-01,2021,7,Nýtt,Torfæruhjól,15
+2021-07-01,2021,7,Nýtt,Eftirvagn IV (O4),12
+2021-07-01,2021,7,Nýtt,Vörubifreið I (N2),12
+2021-07-01,2021,7,Nýtt,Hópbifreið I (M2),5
+2021-07-01,2021,7,Nýtt,Eftirvagn I (O1),4
+2021-07-01,2021,7,Nýtt,Fjór-/sexhjól,4
+2021-07-01,2021,7,Nýtt,Hópbifreið II (M3),3
+2021-07-01,2021,7,Nýtt,Létt bifhjól,2
+2021-07-01,2021,7,Nýtt,Eftirvagn III (O3),1
+2021-07-01,2021,7,Nýtt,L6,1
+2021-08-01,2021,8,Nýtt,Fólksbifreið (M1),845
+2021-08-01,2021,8,Nýtt,Sendibifreið (N1),112
+2021-08-01,2021,8,Nýtt,Eftirvagn II (O2),57
+2021-08-01,2021,8,Nýtt,Dráttarvél,32
+2021-08-01,2021,8,Nýtt,Þungt bifhjól,15
+2021-08-01,2021,8,Nýtt,Vörubifreið II (N3),12
+2021-08-01,2021,8,Nýtt,Eftirvagn IV (O4),8
+2021-08-01,2021,8,Nýtt,Torfæruhjól,8
+2021-08-01,2021,8,Nýtt,Vörubifreið I (N2),7
+2021-08-01,2021,8,Nýtt,Hópbifreið II (M3),3
+2021-08-01,2021,8,Nýtt,Fjór-/sexhjól,2
+2021-08-01,2021,8,Nýtt,Eftirvagn I (O1),1
+2021-08-01,2021,8,Nýtt,Létt bifhjól,1
+2021-09-01,2021,9,Nýtt,Fólksbifreið (M1),1173
+2021-09-01,2021,9,Nýtt,Eftirvagn II (O2),61
+2021-09-01,2021,9,Nýtt,Sendibifreið (N1),48
+2021-09-01,2021,9,Nýtt,Dráttarvél,37
+2021-09-01,2021,9,Nýtt,Vörubifreið II (N3),15
+2021-09-01,2021,9,Nýtt,Vörubifreið I (N2),14
+2021-09-01,2021,9,Nýtt,Fjór-/sexhjól,12
+2021-09-01,2021,9,Nýtt,Þungt bifhjól,12
+2021-09-01,2021,9,Nýtt,Eftirvagn IV (O4),8
+2021-09-01,2021,9,Nýtt,Torfæruhjól,8
+2021-09-01,2021,9,Nýtt,Hópbifreið II (M3),3
+2021-09-01,2021,9,Nýtt,Eftirvagn f. landbúnað (R3),2
+2021-09-01,2021,9,Nýtt,Hópbifreið I (M2),1
+2021-09-01,2021,9,Nýtt,Létt bifhjól,1
+2021-09-01,2021,9,Nýtt,Vélsleði,1
+2021-10-01,2021,10,Nýtt,Fólksbifreið (M1),784
+2021-10-01,2021,10,Nýtt,Sendibifreið (N1),88
+2021-10-01,2021,10,Nýtt,Dráttarvél,40
+2021-10-01,2021,10,Nýtt,Eftirvagn II (O2),36
+2021-10-01,2021,10,Nýtt,Eftirvagn IV (O4),16
+2021-10-01,2021,10,Nýtt,Vörubifreið I (N2),10
+2021-10-01,2021,10,Nýtt,Vörubifreið II (N3),8
+2021-10-01,2021,10,Nýtt,Þungt bifhjól,8
+2021-10-01,2021,10,Nýtt,Fjór-/sexhjól,7
+2021-10-01,2021,10,Nýtt,Hópbifreið I (M2),7
+2021-10-01,2021,10,Nýtt,Torfæruhjól,7
+2021-10-01,2021,10,Nýtt,Hópbifreið II (M3),4
+2021-10-01,2021,10,Nýtt,Vélsleði,2
+2021-10-01,2021,10,Nýtt,Létt bifhjól,1
+2021-11-01,2021,11,Nýtt,Fólksbifreið (M1),967
+2021-11-01,2021,11,Nýtt,VV,394
+2021-11-01,2021,11,Nýtt,Sendibifreið (N1),114
+2021-11-01,2021,11,Nýtt,Eftirvagn II (O2),47
+2021-11-01,2021,11,Nýtt,Dráttarvél,43
+2021-11-01,2021,11,Nýtt,Torfæruhjól,18
+2021-11-01,2021,11,Nýtt,Vélsleði,18
+2021-11-01,2021,11,Nýtt,Vörubifreið I (N2),14
+2021-11-01,2021,11,Nýtt,Vörubifreið II (N3),9
+2021-11-01,2021,11,Nýtt,Fjór-/sexhjól,7
+2021-11-01,2021,11,Nýtt,Þungt bifhjól,7
+2021-11-01,2021,11,Nýtt,Eftirvagn IV (O4),5
+2021-11-01,2021,11,Nýtt,Hópbifreið II (M3),5
+2021-11-01,2021,11,Nýtt,L6,2
+2021-11-01,2021,11,Nýtt,Eftirvagn III (O3),1
+2021-12-01,2021,12,Nýtt,Fólksbifreið (M1),1239
+2021-12-01,2021,12,Nýtt,VV,556
+2021-12-01,2021,12,Nýtt,Sendibifreið (N1),77
+2021-12-01,2021,12,Nýtt,Vélsleði,65
+2021-12-01,2021,12,Nýtt,Dráttarvél,58
+2021-12-01,2021,12,Nýtt,Eftirvagn II (O2),48
+2021-12-01,2021,12,Nýtt,Torfæruhjól,13
+2021-12-01,2021,12,Nýtt,Vörubifreið II (N3),13
+2021-12-01,2021,12,Nýtt,Eftirvagn IV (O4),12
+2021-12-01,2021,12,Nýtt,Vörubifreið I (N2),6
+2021-12-01,2021,12,Nýtt,Þungt bifhjól,6
+2021-12-01,2021,12,Nýtt,Hópbifreið II (M3),2
+2021-12-01,2021,12,Nýtt,Eftirvagn III (O3),1
+2021-12-01,2021,12,Nýtt,Fjór-/sexhjól,1
+2021-12-01,2021,12,Nýtt,Létt bifhjól,1
+2022-01-01,2022,1,Nýtt,Fólksbifreið (M1),884
+2022-01-01,2022,1,Nýtt,VV,105
+2022-01-01,2022,1,Nýtt,Sendibifreið (N1),91
+2022-01-01,2022,1,Nýtt,Eftirvagn II (O2),47
+2022-01-01,2022,1,Nýtt,Vélsleði,38
+2022-01-01,2022,1,Nýtt,Dráttarvél,37
+2022-01-01,2022,1,Nýtt,Torfæruhjól,12
+2022-01-01,2022,1,Nýtt,Vörubifreið II (N3),11
+2022-01-01,2022,1,Nýtt,Þungt bifhjól,9
+2022-01-01,2022,1,Nýtt,Eftirvagn IV (O4),7
+2022-01-01,2022,1,Nýtt,Fjór-/sexhjól,6
+2022-01-01,2022,1,Nýtt,Hópbifreið II (M3),2
+2022-01-01,2022,1,Nýtt,L6,1
+2022-01-01,2022,1,Nýtt,Létt bifhjól,1
+2022-01-01,2022,1,Nýtt,Vörubifreið I (N2),1
+2022-02-01,2022,2,Nýtt,Fólksbifreið (M1),881
+2022-02-01,2022,2,Nýtt,Sendibifreið (N1),99
+2022-02-01,2022,2,Nýtt,Vélsleði,72
+2022-02-01,2022,2,Nýtt,Dráttarvél,47
+2022-02-01,2022,2,Nýtt,VV,34
+2022-02-01,2022,2,Nýtt,Eftirvagn II (O2),30
+2022-02-01,2022,2,Nýtt,Þungt bifhjól,12
+2022-02-01,2022,2,Nýtt,Torfæruhjól,9
+2022-02-01,2022,2,Nýtt,Vörubifreið I (N2),6
+2022-02-01,2022,2,Nýtt,Eftirvagn IV (O4),5
+2022-02-01,2022,2,Nýtt,Hópbifreið II (M3),5
+2022-02-01,2022,2,Nýtt,Vörubifreið II (N3),5
+2022-02-01,2022,2,Nýtt,Fjór-/sexhjól,3
+2022-02-01,2022,2,Nýtt,L6,1
+2022-03-01,2022,3,Nýtt,Fólksbifreið (M1),1451
+2022-03-01,2022,3,Nýtt,VV,279
+2022-03-01,2022,3,Nýtt,Sendibifreið (N1),136
+2022-03-01,2022,3,Nýtt,Eftirvagn II (O2),74
+2022-03-01,2022,3,Nýtt,Vélsleði,65
+2022-03-01,2022,3,Nýtt,Dráttarvél,60
+2022-03-01,2022,3,Nýtt,Torfæruhjól,15
+2022-03-01,2022,3,Nýtt,Vörubifreið II (N3),12
+2022-03-01,2022,3,Nýtt,Eftirvagn IV (O4),9
+2022-03-01,2022,3,Nýtt,Þungt bifhjól,8
+2022-03-01,2022,3,Nýtt,Vörubifreið I (N2),6
+2022-03-01,2022,3,Nýtt,Fjór-/sexhjól,4
+2022-03-01,2022,3,Nýtt,Hópbifreið II (M3),3
+2022-03-01,2022,3,Nýtt,R4,3
+2022-03-01,2022,3,Nýtt,Létt bifhjól,2
+2022-03-01,2022,3,Nýtt,Eftirvagn I (O1),1
+2022-03-01,2022,3,Nýtt,L6,1
+2022-04-01,2022,4,Nýtt,Fólksbifreið (M1),1403
+2022-04-01,2022,4,Nýtt,Sendibifreið (N1),153
+2022-04-01,2022,4,Nýtt,Eftirvagn II (O2),131
+2022-04-01,2022,4,Nýtt,VV,97
+2022-04-01,2022,4,Nýtt,Dráttarvél,70
+2022-04-01,2022,4,Nýtt,Þungt bifhjól,25
+2022-04-01,2022,4,Nýtt,Torfæruhjól,22
+2022-04-01,2022,4,Nýtt,Vörubifreið I (N2),11
+2022-04-01,2022,4,Nýtt,Vörubifreið II (N3),10
+2022-04-01,2022,4,Nýtt,Eftirvagn IV (O4),9
+2022-04-01,2022,4,Nýtt,Eftirvagn I (O1),7
+2022-04-01,2022,4,Nýtt,Vélsleði,6
+2022-04-01,2022,4,Nýtt,Létt bifhjól,3
+2022-04-01,2022,4,Nýtt,Eftirvagn f. landbúnað (R3),1
+2022-04-01,2022,4,Nýtt,Hópbifreið II (M3),1
+2022-04-01,2022,4,Nýtt,L6,1
+2022-04-01,2022,4,Nýtt,R4,1
+2022-05-01,2022,5,Nýtt,Fólksbifreið (M1),2219
+2022-05-01,2022,5,Nýtt,Sendibifreið (N1),250
+2022-05-01,2022,5,Nýtt,Eftirvagn II (O2),228
+2022-05-01,2022,5,Nýtt,Dráttarvél,106
+2022-05-01,2022,5,Nýtt,VV,63
+2022-05-01,2022,5,Nýtt,Þungt bifhjól,41
+2022-05-01,2022,5,Nýtt,Eftirvagn IV (O4),31
+2022-05-01,2022,5,Nýtt,Torfæruhjól,15
+2022-05-01,2022,5,Nýtt,Eftirvagn I (O1),13
+2022-05-01,2022,5,Nýtt,Vörubifreið II (N3),13
+2022-05-01,2022,5,Nýtt,Fjór-/sexhjól,8
+2022-05-01,2022,5,Nýtt,Vörubifreið I (N2),8
+2022-05-01,2022,5,Nýtt,Hópbifreið I (M2),3
+2022-05-01,2022,5,Nýtt,Hópbifreið II (M3),2
+2022-05-01,2022,5,Nýtt,Létt bifhjól,2
+2022-05-01,2022,5,Nýtt,R4,1
+2022-06-01,2022,6,Nýtt,Fólksbifreið (M1),2488
+2022-06-01,2022,6,Nýtt,Eftirvagn II (O2),216
+2022-06-01,2022,6,Nýtt,Sendibifreið (N1),184
+2022-06-01,2022,6,Nýtt,Dráttarvél,134
+2022-06-01,2022,6,Nýtt,VV,48
+2022-06-01,2022,6,Nýtt,Torfæruhjól,39
+2022-06-01,2022,6,Nýtt,Eftirvagn IV (O4),27
+2022-06-01,2022,6,Nýtt,Þungt bifhjól,19
+2022-06-01,2022,6,Nýtt,Vörubifreið I (N2),16
+2022-06-01,2022,6,Nýtt,Vörubifreið II (N3),16
+2022-06-01,2022,6,Nýtt,Eftirvagn I (O1),14
+2022-06-01,2022,6,Nýtt,Fjór-/sexhjól,10
+2022-06-01,2022,6,Nýtt,Létt bifhjól,8
+2022-06-01,2022,6,Nýtt,Hópbifreið II (M3),2
+2022-06-01,2022,6,Nýtt,Eftirvagn III (O3),1
+2022-06-01,2022,6,Nýtt,Eftirvagn f. landbúnað (R3),1
+2022-06-01,2022,6,Nýtt,Vélsleði,1
+2022-07-01,2022,7,Nýtt,Fólksbifreið (M1),1624
+2022-07-01,2022,7,Nýtt,Eftirvagn II (O2),162
+2022-07-01,2022,7,Nýtt,Dráttarvél,138
+2022-07-01,2022,7,Nýtt,Sendibifreið (N1),77
+2022-07-01,2022,7,Nýtt,Þungt bifhjól,31
+2022-07-01,2022,7,Nýtt,VV,29
+2022-07-01,2022,7,Nýtt,Torfæruhjól,28
+2022-07-01,2022,7,Nýtt,Eftirvagn IV (O4),14
+2022-07-01,2022,7,Nýtt,Eftirvagn I (O1),12
+2022-07-01,2022,7,Nýtt,Vörubifreið II (N3),9
+2022-07-01,2022,7,Nýtt,Vörubifreið I (N2),7
+2022-07-01,2022,7,Nýtt,Hópbifreið I (M2),6
+2022-07-01,2022,7,Nýtt,Hópbifreið II (M3),4
+2022-07-01,2022,7,Nýtt,Létt bifhjól,4
+2022-07-01,2022,7,Nýtt,Fjór-/sexhjól,2
+2022-07-01,2022,7,Nýtt,R4,2
+2022-07-01,2022,7,Nýtt,L6,1
+2022-07-01,2022,7,Nýtt,Vélsleði,1
+2022-08-01,2022,8,Nýtt,Fólksbifreið (M1),978
+2022-08-01,2022,8,Nýtt,Sendibifreið (N1),208
+2022-08-01,2022,8,Nýtt,Eftirvagn II (O2),89
+2022-08-01,2022,8,Nýtt,Dráttarvél,65
+2022-08-01,2022,8,Nýtt,Þungt bifhjól,43
+2022-08-01,2022,8,Nýtt,VV,36
+2022-08-01,2022,8,Nýtt,Torfæruhjól,21
+2022-08-01,2022,8,Nýtt,Eftirvagn IV (O4),16
+2022-08-01,2022,8,Nýtt,Vörubifreið II (N3),11
+2022-08-01,2022,8,Nýtt,Vörubifreið I (N2),8
+2022-08-01,2022,8,Nýtt,Létt bifhjól,4
+2022-08-01,2022,8,Nýtt,Fjór-/sexhjól,2
+2022-08-01,2022,8,Nýtt,Eftirvagn f. landbúnað (R3),1
+2022-09-01,2022,9,Nýtt,Fólksbifreið (M1),1192
+2022-09-01,2022,9,Nýtt,Sendibifreið (N1),137
+2022-09-01,2022,9,Nýtt,Dráttarvél,62
+2022-09-01,2022,9,Nýtt,Eftirvagn II (O2),44
+2022-09-01,2022,9,Nýtt,VV,35
+2022-09-01,2022,9,Nýtt,Vörubifreið II (N3),18
+2022-09-01,2022,9,Nýtt,Torfæruhjól,17
+2022-09-01,2022,9,Nýtt,Þungt bifhjól,14
+2022-09-01,2022,9,Nýtt,Eftirvagn IV (O4),13
+2022-09-01,2022,9,Nýtt,Fjór-/sexhjól,8
+2022-09-01,2022,9,Nýtt,Létt bifhjól,7
+2022-09-01,2022,9,Nýtt,Vörubifreið I (N2),6
+2022-09-01,2022,9,Nýtt,Eftirvagn I (O1),1
+2022-09-01,2022,9,Nýtt,Eftirvagn f. landbúnað (R3),1
+2022-09-01,2022,9,Nýtt,Hópbifreið II (M3),1
+2022-10-01,2022,10,Nýtt,Fólksbifreið (M1),811
+2022-10-01,2022,10,Nýtt,Sendibifreið (N1),60
+2022-10-01,2022,10,Nýtt,Eftirvagn II (O2),54
+2022-10-01,2022,10,Nýtt,VV,54
+2022-10-01,2022,10,Nýtt,Dráttarvél,38
+2022-10-01,2022,10,Nýtt,Vörubifreið II (N3),16
+2022-10-01,2022,10,Nýtt,Torfæruhjól,13
+2022-10-01,2022,10,Nýtt,Eftirvagn IV (O4),8
+2022-10-01,2022,10,Nýtt,Þungt bifhjól,7
+2022-10-01,2022,10,Nýtt,Létt bifhjól,6
+2022-10-01,2022,10,Nýtt,Fjór-/sexhjól,4
+2022-10-01,2022,10,Nýtt,Hópbifreið II (M3),3
+2022-10-01,2022,10,Nýtt,Vörubifreið I (N2),2
+2022-10-01,2022,10,Nýtt,Dráttarvél3,1
+2022-10-01,2022,10,Nýtt,Eftirvagn f. landbúnað (R3),1
+2022-10-01,2022,10,Nýtt,L6,1
+2022-10-01,2022,10,Nýtt,Vélsleði,1
+2022-11-01,2022,11,Nýtt,Fólksbifreið (M1),1293
+2022-11-01,2022,11,Nýtt,Sendibifreið (N1),60
+2022-11-01,2022,11,Nýtt,Eftirvagn II (O2),50
+2022-11-01,2022,11,Nýtt,Dráttarvél,41
+2022-11-01,2022,11,Nýtt,Vörubifreið II (N3),39
+2022-11-01,2022,11,Nýtt,VV,38
+2022-11-01,2022,11,Nýtt,Vélsleði,21
+2022-11-01,2022,11,Nýtt,Torfæruhjól,14
+2022-11-01,2022,11,Nýtt,Eftirvagn IV (O4),8
+2022-11-01,2022,11,Nýtt,Þungt bifhjól,8
+2022-11-01,2022,11,Nýtt,Hópbifreið II (M3),6
+2022-11-01,2022,11,Nýtt,Létt bifhjól,4
+2022-11-01,2022,11,Nýtt,Vörubifreið I (N2),3
+2022-11-01,2022,11,Nýtt,Eftirvagn III (O3),2
+2022-11-01,2022,11,Nýtt,Fjór-/sexhjól,2
+2022-11-01,2022,11,Nýtt,L6,1
+2022-12-01,2022,12,Nýtt,Fólksbifreið (M1),1450
+2022-12-01,2022,12,Nýtt,Sendibifreið (N1),151
+2022-12-01,2022,12,Nýtt,Dráttarvél,40
+2022-12-01,2022,12,Nýtt,Eftirvagn II (O2),40
+2022-12-01,2022,12,Nýtt,Vélsleði,31
+2022-12-01,2022,12,Nýtt,VV,30
+2022-12-01,2022,12,Nýtt,Vörubifreið I (N2),29
+2022-12-01,2022,12,Nýtt,Vörubifreið II (N3),22
+2022-12-01,2022,12,Nýtt,Torfæruhjól,12
+2022-12-01,2022,12,Nýtt,Eftirvagn IV (O4),7
+2022-12-01,2022,12,Nýtt,Þungt bifhjól,4
+2022-12-01,2022,12,Nýtt,Eftirvagn f. landbúnað (R3),2
+2022-12-01,2022,12,Nýtt,Fjór-/sexhjól,1
+2022-12-01,2022,12,Nýtt,Létt bifhjól,1
+2023-01-01,2023,1,Nýtt,Fólksbifreið (M1),730
+2023-01-01,2023,1,Nýtt,Sendibifreið (N1),138
+2023-01-01,2023,1,Nýtt,Vélsleði,66
+2023-01-01,2023,1,Nýtt,Dráttarvél,53
+2023-01-01,2023,1,Nýtt,VV,33
+2023-01-01,2023,1,Nýtt,Eftirvagn II (O2),31
+2023-01-01,2023,1,Nýtt,Vörubifreið II (N3),19
+2023-01-01,2023,1,Nýtt,Eftirvagn IV (O4),15
+2023-01-01,2023,1,Nýtt,Torfæruhjól,13
+2023-01-01,2023,1,Nýtt,Vörubifreið I (N2),7
+2023-01-01,2023,1,Nýtt,Hópbifreið II (M3),6
+2023-01-01,2023,1,Nýtt,Þungt bifhjól,5
+2023-01-01,2023,1,Nýtt,Fjór-/sexhjól,3
+2023-01-01,2023,1,Nýtt,Eftirvagn I (O1),1
+2023-02-01,2023,2,Nýtt,Fólksbifreið (M1),934
+2023-02-01,2023,2,Nýtt,Sendibifreið (N1),126
+2023-02-01,2023,2,Nýtt,Vélsleði,59
+2023-02-01,2023,2,Nýtt,Dráttarvél,41
+2023-02-01,2023,2,Nýtt,Eftirvagn II (O2),39
+2023-02-01,2023,2,Nýtt,Vörubifreið II (N3),27
+2023-02-01,2023,2,Nýtt,VV,21
+2023-02-01,2023,2,Nýtt,Vörubifreið I (N2),17
+2023-02-01,2023,2,Nýtt,Eftirvagn IV (O4),13
+2023-02-01,2023,2,Nýtt,Þungt bifhjól,13
+2023-02-01,2023,2,Nýtt,Torfæruhjól,7
+2023-02-01,2023,2,Nýtt,Fjór-/sexhjól,6
+2023-02-01,2023,2,Nýtt,Hópbifreið II (M3),4
+2023-03-01,2023,3,Nýtt,Fólksbifreið (M1),1830
+2023-03-01,2023,3,Nýtt,Sendibifreið (N1),158
+2023-03-01,2023,3,Nýtt,Dráttarvél,64
+2023-03-01,2023,3,Nýtt,Eftirvagn II (O2),55
+2023-03-01,2023,3,Nýtt,Vélsleði,50
+2023-03-01,2023,3,Nýtt,Vörubifreið II (N3),37
+2023-03-01,2023,3,Nýtt,VV,30
+2023-03-01,2023,3,Nýtt,Þungt bifhjól,29
+2023-03-01,2023,3,Nýtt,Torfæruhjól,27
+2023-03-01,2023,3,Nýtt,Eftirvagn IV (O4),17
+2023-03-01,2023,3,Nýtt,Vörubifreið I (N2),9
+2023-03-01,2023,3,Nýtt,Hópbifreið II (M3),8
+2023-03-01,2023,3,Nýtt,Eftirvagn I (O1),1
+2023-03-01,2023,3,Nýtt,Fjór-/sexhjól,1
+2023-04-01,2023,4,Nýtt,Fólksbifreið (M1),1628
+2023-04-01,2023,4,Nýtt,Eftirvagn II (O2),140
+2023-04-01,2023,4,Nýtt,Sendibifreið (N1),107
+2023-04-01,2023,4,Nýtt,Dráttarvél,77
+2023-04-01,2023,4,Nýtt,Þungt bifhjól,26
+2023-04-01,2023,4,Nýtt,Torfæruhjól,23
+2023-04-01,2023,4,Nýtt,Vörubifreið II (N3),21
+2023-04-01,2023,4,Nýtt,VV,19
+2023-04-01,2023,4,Nýtt,Vörubifreið I (N2),14
+2023-04-01,2023,4,Nýtt,Létt bifhjól,7
+2023-04-01,2023,4,Nýtt,Eftirvagn IV (O4),6
+2023-04-01,2023,4,Nýtt,Fjór-/sexhjól,4
+2023-04-01,2023,4,Nýtt,Vélsleði,4
+2023-04-01,2023,4,Nýtt,Eftirvagn I (O1),2
+2023-04-01,2023,4,Nýtt,Hópbifreið II (M3),2
+2023-04-01,2023,4,Nýtt,Eftirvagn f. landbúnað (R3),1
+2023-05-01,2023,5,Nýtt,Fólksbifreið (M1),2577
+2023-05-01,2023,5,Nýtt,Sendibifreið (N1),340
+2023-05-01,2023,5,Nýtt,Eftirvagn II (O2),176
+2023-05-01,2023,5,Nýtt,Dráttarvél,86
+2023-05-01,2023,5,Nýtt,Þungt bifhjól,38
+2023-05-01,2023,5,Nýtt,Torfæruhjól,29
+2023-05-01,2023,5,Nýtt,VV,29
+2023-05-01,2023,5,Nýtt,Vörubifreið II (N3),20
+2023-05-01,2023,5,Nýtt,Vörubifreið I (N2),15
+2023-05-01,2023,5,Nýtt,Eftirvagn IV (O4),9
+2023-05-01,2023,5,Nýtt,Hópbifreið I (M2),8
+2023-05-01,2023,5,Nýtt,Hópbifreið II (M3),8
+2023-05-01,2023,5,Nýtt,Eftirvagn I (O1),7
+2023-05-01,2023,5,Nýtt,Létt bifhjól,7
+2023-05-01,2023,5,Nýtt,Eftirvagn f. landbúnað (R3),2
+2023-05-01,2023,5,Nýtt,L6,1
+2023-05-01,2023,5,Nýtt,Vélsleði,1
+2023-06-01,2023,6,Nýtt,Fólksbifreið (M1),2568
+2023-06-01,2023,6,Nýtt,Sendibifreið (N1),239
+2023-06-01,2023,6,Nýtt,Eftirvagn II (O2),196
+2023-06-01,2023,6,Nýtt,Dráttarvél,146
+2023-06-01,2023,6,Nýtt,Þungt bifhjól,43
+2023-06-01,2023,6,Nýtt,Vörubifreið II (N3),39
+2023-06-01,2023,6,Nýtt,Torfæruhjól,36
+2023-06-01,2023,6,Nýtt,VV,28
+2023-06-01,2023,6,Nýtt,Hópbifreið II (M3),25
+2023-06-01,2023,6,Nýtt,Eftirvagn IV (O4),14
+2023-06-01,2023,6,Nýtt,Vörubifreið I (N2),13
+2023-06-01,2023,6,Nýtt,Eftirvagn I (O1),9
+2023-06-01,2023,6,Nýtt,Hópbifreið I (M2),5
+2023-06-01,2023,6,Nýtt,Fjór-/sexhjól,4
+2023-06-01,2023,6,Nýtt,Létt bifhjól,4
+2023-06-01,2023,6,Nýtt,Vélsleði,1
+2023-07-01,2023,7,Nýtt,Fólksbifreið (M1),1268
+2023-07-01,2023,7,Nýtt,Sendibifreið (N1),144
+2023-07-01,2023,7,Nýtt,Eftirvagn II (O2),126
+2023-07-01,2023,7,Nýtt,Dráttarvél,97
+2023-07-01,2023,7,Nýtt,Torfæruhjól,48
+2023-07-01,2023,7,Nýtt,Þungt bifhjól,47
+2023-07-01,2023,7,Nýtt,Vörubifreið II (N3),25
+2023-07-01,2023,7,Nýtt,VV,23
+2023-07-01,2023,7,Nýtt,Hópbifreið II (M3),13
+2023-07-01,2023,7,Nýtt,Vörubifreið I (N2),8
+2023-07-01,2023,7,Nýtt,Eftirvagn IV (O4),7
+2023-07-01,2023,7,Nýtt,Eftirvagn I (O1),6
+2023-07-01,2023,7,Nýtt,Hópbifreið I (M2),6
+2023-07-01,2023,7,Nýtt,Létt bifhjól,3
+2023-07-01,2023,7,Nýtt,Eftirvagn III (O3),1
+2023-08-01,2023,8,Nýtt,Fólksbifreið (M1),1165
+2023-08-01,2023,8,Nýtt,Sendibifreið (N1),117
+2023-08-01,2023,8,Nýtt,Eftirvagn II (O2),74
+2023-08-01,2023,8,Nýtt,Dráttarvél,70
+2023-08-01,2023,8,Nýtt,VV,24
+2023-08-01,2023,8,Nýtt,Vörubifreið II (N3),22
+2023-08-01,2023,8,Nýtt,Torfæruhjól,21
+2023-08-01,2023,8,Nýtt,Þungt bifhjól,18
+2023-08-01,2023,8,Nýtt,Eftirvagn IV (O4),14
+2023-08-01,2023,8,Nýtt,Hópbifreið II (M3),11
+2023-08-01,2023,8,Nýtt,Vörubifreið I (N2),7
+2023-08-01,2023,8,Nýtt,Eftirvagn I (O1),4
+2023-08-01,2023,8,Nýtt,Eftirvagn f. landbúnað (R3),2
+2023-08-01,2023,8,Nýtt,Hópbifreið I (M2),2
+2023-08-01,2023,8,Nýtt,Létt bifhjól,2
+2023-08-01,2023,8,Nýtt,Fjór-/sexhjól,1
+2023-09-01,2023,9,Nýtt,Fólksbifreið (M1),1134
+2023-09-01,2023,9,Nýtt,Sendibifreið (N1),156
+2023-09-01,2023,9,Nýtt,Dráttarvél,60
+2023-09-01,2023,9,Nýtt,Eftirvagn II (O2),56
+2023-09-01,2023,9,Nýtt,VV,29
+2023-09-01,2023,9,Nýtt,Þungt bifhjól,21
+2023-09-01,2023,9,Nýtt,Hópbifreið II (M3),20
+2023-09-01,2023,9,Nýtt,Vélsleði,16
+2023-09-01,2023,9,Nýtt,Torfæruhjól,14
+2023-09-01,2023,9,Nýtt,Vörubifreið II (N3),13
+2023-09-01,2023,9,Nýtt,Vörubifreið I (N2),10
+2023-09-01,2023,9,Nýtt,Eftirvagn IV (O4),7
+2023-09-01,2023,9,Nýtt,Létt bifhjól,5
+2023-09-01,2023,9,Nýtt,Eftirvagn f. landbúnað (R3),2
+2023-09-01,2023,9,Nýtt,Eftirvagn I (O1),1
+2023-09-01,2023,9,Nýtt,Fjór-/sexhjól,1
+2023-10-01,2023,10,Nýtt,Fólksbifreið (M1),961
+2023-10-01,2023,10,Nýtt,Sendibifreið (N1),132
+2023-10-01,2023,10,Nýtt,VV,46
+2023-10-01,2023,10,Nýtt,Dráttarvél,44
+2023-10-01,2023,10,Nýtt,Eftirvagn II (O2),31
+2023-10-01,2023,10,Nýtt,Torfæruhjól,15
+2023-10-01,2023,10,Nýtt,Vörubifreið II (N3),15
+2023-10-01,2023,10,Nýtt,Vélsleði,11
+2023-10-01,2023,10,Nýtt,Þungt bifhjól,11
+2023-10-01,2023,10,Nýtt,Hópbifreið II (M3),9
+2023-10-01,2023,10,Nýtt,Vörubifreið I (N2),8
+2023-10-01,2023,10,Nýtt,Eftirvagn IV (O4),4
+2023-10-01,2023,10,Nýtt,Létt bifhjól,3
+2023-10-01,2023,10,Nýtt,Eftirvagn f. landbúnað (R3),2
+2023-10-01,2023,10,Nýtt,Eftirvagn III (O3),1
+2023-10-01,2023,10,Nýtt,Fjór-/sexhjól,1
+2023-10-01,2023,10,Nýtt,Hópbifreið I (M2),1
+2023-11-01,2023,11,Nýtt,Fólksbifreið (M1),1296
+2023-11-01,2023,11,Nýtt,Sendibifreið (N1),144
+2023-11-01,2023,11,Nýtt,Dráttarvél,57
+2023-11-01,2023,11,Nýtt,Eftirvagn II (O2),32
+2023-11-01,2023,11,Nýtt,VV,31
+2023-11-01,2023,11,Nýtt,Vörubifreið II (N3),29
+2023-11-01,2023,11,Nýtt,Vélsleði,25
+2023-11-01,2023,11,Nýtt,Torfæruhjól,21
+2023-11-01,2023,11,Nýtt,Eftirvagn IV (O4),13
+2023-11-01,2023,11,Nýtt,Þungt bifhjól,12
+2023-11-01,2023,11,Nýtt,Hópbifreið II (M3),8
+2023-11-01,2023,11,Nýtt,Vörubifreið I (N2),6
+2023-11-01,2023,11,Nýtt,Létt bifhjól,4
+2023-11-01,2023,11,Nýtt,Hópbifreið I (M2),2
+2023-11-01,2023,11,Nýtt,Eftirvagn III (O3),1
+2023-11-01,2023,11,Nýtt,Eftirvagn f. landbúnað (R3),1
+2023-11-01,2023,11,Nýtt,Fjór-/sexhjól,1
+2023-12-01,2023,12,Nýtt,Fólksbifreið (M1),1450
+2023-12-01,2023,12,Nýtt,Sendibifreið (N1),173
+2023-12-01,2023,12,Nýtt,Dráttarvél,57
+2023-12-01,2023,12,Nýtt,Eftirvagn II (O2),40
+2023-12-01,2023,12,Nýtt,Vélsleði,37
+2023-12-01,2023,12,Nýtt,Vörubifreið II (N3),30
+2023-12-01,2023,12,Nýtt,VV,20
+2023-12-01,2023,12,Nýtt,Torfæruhjól,16
+2023-12-01,2023,12,Nýtt,Vörubifreið I (N2),11
+2023-12-01,2023,12,Nýtt,Eftirvagn IV (O4),10
+2023-12-01,2023,12,Nýtt,Þungt bifhjól,6
+2023-12-01,2023,12,Nýtt,Hópbifreið II (M3),4
+2023-12-01,2023,12,Nýtt,Fjór-/sexhjól,1
+2023-12-01,2023,12,Nýtt,Hópbifreið I (M2),1
+2023-12-01,2023,12,Nýtt,L6,1
+2023-12-01,2023,12,Nýtt,Létt bifhjól,1
+2023-12-01,2023,12,Nýtt,R4,1
+2024-01-01,2024,1,Nýtt,Fólksbifreið (M1),457
+2024-01-01,2024,1,Nýtt,Sendibifreið (N1),108
+2024-01-01,2024,1,Nýtt,Vélsleði,46
+2024-01-01,2024,1,Nýtt,VV,41
+2024-01-01,2024,1,Nýtt,Eftirvagn II (O2),37
+2024-01-01,2024,1,Nýtt,Dráttarvél,25
+2024-01-01,2024,1,Nýtt,Vörubifreið II (N3),17
+2024-01-01,2024,1,Nýtt,Torfæruhjól,13
+2024-01-01,2024,1,Nýtt,Þungt bifhjól,11
+2024-01-01,2024,1,Nýtt,Hópbifreið II (M3),10
+2024-01-01,2024,1,Nýtt,Vörubifreið I (N2),9
+2024-01-01,2024,1,Nýtt,Létt bifhjól,5
+2024-01-01,2024,1,Nýtt,Eftirvagn IV (O4),4
+2024-01-01,2024,1,Nýtt,Eftirvagn III (O3),1
+2024-01-01,2024,1,Nýtt,Eftirvagn f. landbúnað (R3),1
+2024-01-01,2024,1,Nýtt,R4,1
+2024-02-01,2024,2,Nýtt,Fólksbifreið (M1),397
+2024-02-01,2024,2,Nýtt,Sendibifreið (N1),188
+2024-02-01,2024,2,Nýtt,VV,50
+2024-02-01,2024,2,Nýtt,Dráttarvél,49
+2024-02-01,2024,2,Nýtt,Vélsleði,42
+2024-02-01,2024,2,Nýtt,Eftirvagn II (O2),28
+2024-02-01,2024,2,Nýtt,Vörubifreið II (N3),21
+2024-02-01,2024,2,Nýtt,Torfæruhjól,14
+2024-02-01,2024,2,Nýtt,Eftirvagn IV (O4),11
+2024-02-01,2024,2,Nýtt,Vörubifreið I (N2),9
+2024-02-01,2024,2,Nýtt,Þungt bifhjól,9
+2024-02-01,2024,2,Nýtt,Hópbifreið II (M3),8
+2024-02-01,2024,2,Nýtt,Fjór-/sexhjól,1
+2024-02-01,2024,2,Nýtt,Létt bifhjól,1
+2024-03-01,2024,3,Nýtt,Fólksbifreið (M1),531
+2024-03-01,2024,3,Nýtt,Sendibifreið (N1),176
+2024-03-01,2024,3,Nýtt,Eftirvagn II (O2),69
+2024-03-01,2024,3,Nýtt,Dráttarvél,46
+2024-03-01,2024,3,Nýtt,Torfæruhjól,24
+2024-03-01,2024,3,Nýtt,Þungt bifhjól,20
+2024-03-01,2024,3,Nýtt,Vélsleði,19
+2024-03-01,2024,3,Nýtt,Vörubifreið II (N3),19
+2024-03-01,2024,3,Nýtt,VV,18
+2024-03-01,2024,3,Nýtt,Hópbifreið II (M3),11
+2024-03-01,2024,3,Nýtt,Eftirvagn IV (O4),7
+2024-03-01,2024,3,Nýtt,Hópbifreið I (M2),3
+2024-03-01,2024,3,Nýtt,Létt bifhjól,2
+2024-03-01,2024,3,Nýtt,Vörubifreið I (N2),2
+2024-03-01,2024,3,Nýtt,Eftirvagn I (O1),1
+2024-03-01,2024,3,Nýtt,Fjór-/sexhjól,1
+2024-04-01,2024,4,Nýtt,Fólksbifreið (M1),1357
+2024-04-01,2024,4,Nýtt,Sendibifreið (N1),187
+2024-04-01,2024,4,Nýtt,Eftirvagn II (O2),114
+2024-04-01,2024,4,Nýtt,Dráttarvél,73
+2024-04-01,2024,4,Nýtt,Vörubifreið II (N3),26
+2024-04-01,2024,4,Nýtt,Þungt bifhjól,23
+2024-04-01,2024,4,Nýtt,Torfæruhjól,20
+2024-04-01,2024,4,Nýtt,VV,16
+2024-04-01,2024,4,Nýtt,Vörubifreið I (N2),15
+2024-04-01,2024,4,Nýtt,Hópbifreið II (M3),12
+2024-04-01,2024,4,Nýtt,Vélsleði,12
+2024-04-01,2024,4,Nýtt,Eftirvagn IV (O4),8
+2024-04-01,2024,4,Nýtt,Eftirvagn I (O1),6
+2024-04-01,2024,4,Nýtt,Létt bifhjól,4
+2024-04-01,2024,4,Nýtt,Hópbifreið I (M2),2
+2024-04-01,2024,4,Nýtt,Eftirvagn III (O3),1
+2024-04-01,2024,4,Nýtt,Eftirvagn f. landbúnað (R3),1
+2024-05-01,2024,5,Nýtt,Fólksbifreið (M1),2000
+2024-05-01,2024,5,Nýtt,Sendibifreið (N1),272
+2024-05-01,2024,5,Nýtt,Eftirvagn II (O2),168
+2024-05-01,2024,5,Nýtt,Dráttarvél,79
+2024-05-01,2024,5,Nýtt,Þungt bifhjól,43
+2024-05-01,2024,5,Nýtt,Torfæruhjól,37
+2024-05-01,2024,5,Nýtt,VV,25
+2024-05-01,2024,5,Nýtt,Hópbifreið II (M3),20
+2024-05-01,2024,5,Nýtt,Vörubifreið II (N3),20
+2024-05-01,2024,5,Nýtt,Eftirvagn IV (O4),12
+2024-05-01,2024,5,Nýtt,Létt bifhjól,12
+2024-05-01,2024,5,Nýtt,Vörubifreið I (N2),7
+2024-05-01,2024,5,Nýtt,Eftirvagn I (O1),4
+2024-05-01,2024,5,Nýtt,Eftirvagn f. landbúnað (R3),3
+2024-05-01,2024,5,Nýtt,Fjór-/sexhjól,2
+2024-05-01,2024,5,Nýtt,Hópbifreið I (M2),1
+2024-05-01,2024,5,Nýtt,Vélsleði,1
+2024-06-01,2024,6,Nýtt,Fólksbifreið (M1),1597
+2024-06-01,2024,6,Nýtt,Sendibifreið (N1),247
+2024-06-01,2024,6,Nýtt,Eftirvagn II (O2),143
+2024-06-01,2024,6,Nýtt,Dráttarvél,95
+2024-06-01,2024,6,Nýtt,Torfæruhjól,43
+2024-06-01,2024,6,Nýtt,Þungt bifhjól,33
+2024-06-01,2024,6,Nýtt,Vörubifreið II (N3),28
+2024-06-01,2024,6,Nýtt,Hópbifreið II (M3),15
+2024-06-01,2024,6,Nýtt,VV,15
+2024-06-01,2024,6,Nýtt,Eftirvagn IV (O4),10
+2024-06-01,2024,6,Nýtt,Vörubifreið I (N2),7
+2024-06-01,2024,6,Nýtt,Létt bifhjól,5
+2024-06-01,2024,6,Nýtt,Eftirvagn I (O1),4
+2024-06-01,2024,6,Nýtt,Hópbifreið I (M2),4
+2024-06-01,2024,6,Nýtt,Eftirvagn f. landbúnað (R3),2
+2024-06-01,2024,6,Nýtt,Vélsleði,2
+2024-06-01,2024,6,Nýtt,R4,1
+2024-07-01,2024,7,Nýtt,Fólksbifreið (M1),836
+2024-07-01,2024,7,Nýtt,Eftirvagn II (O2),144
+2024-07-01,2024,7,Nýtt,Sendibifreið (N1),94
+2024-07-01,2024,7,Nýtt,Dráttarvél,81
+2024-07-01,2024,7,Nýtt,Torfæruhjól,30
+2024-07-01,2024,7,Nýtt,Vörubifreið II (N3),27
+2024-07-01,2024,7,Nýtt,Hópbifreið II (M3),21
+2024-07-01,2024,7,Nýtt,Þungt bifhjól,21
+2024-07-01,2024,7,Nýtt,VV,20
+2024-07-01,2024,7,Nýtt,Eftirvagn IV (O4),16
+2024-07-01,2024,7,Nýtt,Vörubifreið I (N2),14
+2024-07-01,2024,7,Nýtt,Eftirvagn I (O1),10
+2024-07-01,2024,7,Nýtt,Létt bifhjól,9
+2024-07-01,2024,7,Nýtt,Eftirvagn f. landbúnað (R3),2
+2024-08-01,2024,8,Nýtt,Fólksbifreið (M1),463
+2024-08-01,2024,8,Nýtt,Sendibifreið (N1),106
+2024-08-01,2024,8,Nýtt,Eftirvagn II (O2),64
+2024-08-01,2024,8,Nýtt,Dráttarvél,62
+2024-08-01,2024,8,Nýtt,Torfæruhjól,20
+2024-08-01,2024,8,Nýtt,Vörubifreið II (N3),20
+2024-08-01,2024,8,Nýtt,Þungt bifhjól,20
+2024-08-01,2024,8,Nýtt,VV,15
+2024-08-01,2024,8,Nýtt,Hópbifreið II (M3),9
+2024-08-01,2024,8,Nýtt,Eftirvagn IV (O4),8
+2024-08-01,2024,8,Nýtt,Eftirvagn f. landbúnað (R3),6
+2024-08-01,2024,8,Nýtt,Vörubifreið I (N2),4
+2024-08-01,2024,8,Nýtt,Eftirvagn I (O1),3
+2024-08-01,2024,8,Nýtt,Létt bifhjól,3
+2024-08-01,2024,8,Nýtt,Hópbifreið I (M2),2
+2024-08-01,2024,8,Nýtt,Eftirvagn III (O3),1
+2024-08-01,2024,8,Nýtt,R4,1
+2024-09-01,2024,9,Nýtt,Fólksbifreið (M1),560
+2024-09-01,2024,9,Nýtt,Sendibifreið (N1),103
+2024-09-01,2024,9,Nýtt,Dráttarvél,87
+2024-09-01,2024,9,Nýtt,Eftirvagn II (O2),51
+2024-09-01,2024,9,Nýtt,Hópbifreið II (M3),31
+2024-09-01,2024,9,Nýtt,Þungt bifhjól,26
+2024-09-01,2024,9,Nýtt,Vörubifreið II (N3),23
+2024-09-01,2024,9,Nýtt,VV,12
+2024-09-01,2024,9,Nýtt,Vörubifreið I (N2),11
+2024-09-01,2024,9,Nýtt,Hópbifreið I (M2),10
+2024-09-01,2024,9,Nýtt,Eftirvagn IV (O4),6
+2024-09-01,2024,9,Nýtt,Torfæruhjól,6
+2024-09-01,2024,9,Nýtt,Vélsleði,2
+2024-09-01,2024,9,Nýtt,Eftirvagn III (O3),1
+2024-09-01,2024,9,Nýtt,Eftirvagn f. landbúnað (R3),1
+2024-10-01,2024,10,Nýtt,Fólksbifreið (M1),679
+2024-10-01,2024,10,Nýtt,Sendibifreið (N1),103
+2024-10-01,2024,10,Nýtt,Eftirvagn II (O2),67
+2024-10-01,2024,10,Nýtt,Dráttarvél,48
+2024-10-01,2024,10,Nýtt,Vélsleði,34
+2024-10-01,2024,10,Nýtt,Vörubifreið II (N3),30
+2024-10-01,2024,10,Nýtt,Hópbifreið II (M3),27
+2024-10-01,2024,10,Nýtt,VV,17
+2024-10-01,2024,10,Nýtt,Þungt bifhjól,9
+2024-10-01,2024,10,Nýtt,Torfæruhjól,8
+2024-10-01,2024,10,Nýtt,Eftirvagn IV (O4),7
+2024-10-01,2024,10,Nýtt,Vörubifreið I (N2),7
+2024-10-01,2024,10,Nýtt,Hópbifreið I (M2),3
+2024-10-01,2024,10,Nýtt,Eftirvagn III (O3),1
+2024-10-01,2024,10,Nýtt,Eftirvagn f. landbúnað (R3),1
+2024-10-01,2024,10,Nýtt,Fjór-/sexhjól,1
+2024-10-01,2024,10,Nýtt,Létt bifhjól,1
+2024-11-01,2024,11,Nýtt,Fólksbifreið (M1),506
+2024-11-01,2024,11,Nýtt,Sendibifreið (N1),116
+2024-11-01,2024,11,Nýtt,Eftirvagn II (O2),48
+2024-11-01,2024,11,Nýtt,Dráttarvél,47
+2024-11-01,2024,11,Nýtt,Vörubifreið II (N3),37
+2024-11-01,2024,11,Nýtt,Vélsleði,23
+2024-11-01,2024,11,Nýtt,VV,19
+2024-11-01,2024,11,Nýtt,Eftirvagn IV (O4),14
+2024-11-01,2024,11,Nýtt,Torfæruhjól,8
+2024-11-01,2024,11,Nýtt,Vörubifreið I (N2),6
+2024-11-01,2024,11,Nýtt,Hópbifreið II (M3),5
+2024-11-01,2024,11,Nýtt,Eftirvagn f. landbúnað (R3),4
+2024-11-01,2024,11,Nýtt,Þungt bifhjól,4
+2024-11-01,2024,11,Nýtt,Hópbifreið I (M2),1
+2024-12-01,2024,12,Nýtt,Fólksbifreið (M1),835
+2024-12-01,2024,12,Nýtt,Sendibifreið (N1),183
+2024-12-01,2024,12,Nýtt,Dráttarvél,45
+2024-12-01,2024,12,Nýtt,Vélsleði,43
+2024-12-01,2024,12,Nýtt,Eftirvagn II (O2),23
+2024-12-01,2024,12,Nýtt,Vörubifreið II (N3),22
+2024-12-01,2024,12,Nýtt,VV,18
+2024-12-01,2024,12,Nýtt,Torfæruhjól,12
+2024-12-01,2024,12,Nýtt,Þungt bifhjól,12
+2024-12-01,2024,12,Nýtt,Eftirvagn IV (O4),5
+2024-12-01,2024,12,Nýtt,Fjór-/sexhjól,5
+2024-12-01,2024,12,Nýtt,Vörubifreið I (N2),3
+2024-12-01,2024,12,Nýtt,Hópbifreið II (M3),2
+2024-12-01,2024,12,Nýtt,Eftirvagn f. landbúnað (R3),1
+2024-12-01,2024,12,Nýtt,Hópbifreið I (M2),1
+2025-01-01,2025,1,Nýtt,Fólksbifreið (M1),595
+2025-01-01,2025,1,Nýtt,Sendibifreið (N1),105
+2025-01-01,2025,1,Nýtt,Dráttarvél,52
+2025-01-01,2025,1,Nýtt,Vélsleði,34
+2025-01-01,2025,1,Nýtt,Eftirvagn II (O2),32
+2025-01-01,2025,1,Nýtt,Vörubifreið II (N3),24
+2025-01-01,2025,1,Nýtt,VV,13
+2025-01-01,2025,1,Nýtt,Torfæruhjól,11
+2025-01-01,2025,1,Nýtt,Þungt bifhjól,10
+2025-01-01,2025,1,Nýtt,Vörubifreið I (N2),8
+2025-01-01,2025,1,Nýtt,Eftirvagn IV (O4),7
+2025-01-01,2025,1,Nýtt,Hópbifreið II (M3),7
+2025-01-01,2025,1,Nýtt,Eftirvagn f. landbúnað (R3),4
+2025-01-01,2025,1,Nýtt,Létt bifhjól,1
+2025-02-01,2025,2,Nýtt,Fólksbifreið (M1),655
+2025-02-01,2025,2,Nýtt,Sendibifreið (N1),102
+2025-02-01,2025,2,Nýtt,Dráttarvél,53
+2025-02-01,2025,2,Nýtt,Eftirvagn II (O2),31
+2025-02-01,2025,2,Nýtt,VV,31
+2025-02-01,2025,2,Nýtt,Þungt bifhjól,21
+2025-02-01,2025,2,Nýtt,Hópbifreið II (M3),19
+2025-02-01,2025,2,Nýtt,Eftirvagn IV (O4),18
+2025-02-01,2025,2,Nýtt,Vélsleði,15
+2025-02-01,2025,2,Nýtt,Torfæruhjól,14
+2025-02-01,2025,2,Nýtt,Vörubifreið II (N3),10
+2025-02-01,2025,2,Nýtt,Vörubifreið I (N2),5
+2025-02-01,2025,2,Nýtt,Eftirvagn f. landbúnað (R3),1
+2025-03-01,2025,3,Nýtt,Fólksbifreið (M1),1021
+2025-03-01,2025,3,Nýtt,Sendibifreið (N1),166
+2025-03-01,2025,3,Nýtt,Dráttarvél,57
+2025-03-01,2025,3,Nýtt,Eftirvagn II (O2),43
+2025-03-01,2025,3,Nýtt,VV,27
+2025-03-01,2025,3,Nýtt,Hópbifreið II (M3),19
+2025-03-01,2025,3,Nýtt,Vörubifreið II (N3),19
+2025-03-01,2025,3,Nýtt,Torfæruhjól,18
+2025-03-01,2025,3,Nýtt,Þungt bifhjól,17
+2025-03-01,2025,3,Nýtt,Vélsleði,14
+2025-03-01,2025,3,Nýtt,Eftirvagn IV (O4),7
+2025-03-01,2025,3,Nýtt,Hópbifreið I (M2),6
+2025-03-01,2025,3,Nýtt,Vörubifreið I (N2),5
+2025-03-01,2025,3,Nýtt,Eftirvagn f. landbúnað (R3),3
+2025-04-01,2025,4,Nýtt,Fólksbifreið (M1),1455
+2025-04-01,2025,4,Nýtt,Sendibifreið (N1),109
+2025-04-01,2025,4,Nýtt,Eftirvagn II (O2),88
+2025-04-01,2025,4,Nýtt,Dráttarvél,84
+2025-04-01,2025,4,Nýtt,Torfæruhjól,39
+2025-04-01,2025,4,Nýtt,Þungt bifhjól,31
+2025-04-01,2025,4,Nýtt,VV,17
+2025-04-01,2025,4,Nýtt,Vörubifreið II (N3),17
+2025-04-01,2025,4,Nýtt,Hópbifreið II (M3),13
+2025-04-01,2025,4,Nýtt,Létt bifhjól,11
+2025-04-01,2025,4,Nýtt,Vélsleði,8
+2025-04-01,2025,4,Nýtt,Eftirvagn IV (O4),5
+2025-04-01,2025,4,Nýtt,Vörubifreið I (N2),5
+2025-04-01,2025,4,Nýtt,Eftirvagn I (O1),4
+2025-04-01,2025,4,Nýtt,Eftirvagn f. landbúnað (R3),1
+2025-04-01,2025,4,Nýtt,Hópbifreið I (M2),1
+2025-05-01,2025,5,Nýtt,Fólksbifreið (M1),2127
+2025-05-01,2025,5,Nýtt,Sendibifreið (N1),166
+2025-05-01,2025,5,Nýtt,Eftirvagn II (O2),162
+2025-05-01,2025,5,Nýtt,Dráttarvél,99
+2025-05-01,2025,5,Nýtt,Torfæruhjól,39
+2025-05-01,2025,5,Nýtt,Hópbifreið II (M3),36
+2025-05-01,2025,5,Nýtt,Þungt bifhjól,36
+2025-05-01,2025,5,Nýtt,VV,17
+2025-05-01,2025,5,Nýtt,Vörubifreið II (N3),15
+2025-05-01,2025,5,Nýtt,Eftirvagn I (O1),10
+2025-05-01,2025,5,Nýtt,Vörubifreið I (N2),8
+2025-05-01,2025,5,Nýtt,Eftirvagn f. landbúnað (R3),7
+2025-05-01,2025,5,Nýtt,Létt bifhjól,5
+2025-05-01,2025,5,Nýtt,Eftirvagn IV (O4),3
+2025-05-01,2025,5,Nýtt,Vélsleði,2
+2025-06-01,2025,6,Nýtt,Fólksbifreið (M1),2030
+2025-06-01,2025,6,Nýtt,Eftirvagn II (O2),148
+2025-06-01,2025,6,Nýtt,Sendibifreið (N1),148
+2025-06-01,2025,6,Nýtt,Dráttarvél,87
+2025-06-01,2025,6,Nýtt,Torfæruhjól,35
+2025-06-01,2025,6,Nýtt,Þungt bifhjól,31
+2025-06-01,2025,6,Nýtt,Hópbifreið II (M3),21
+2025-06-01,2025,6,Nýtt,Vörubifreið II (N3),20
+2025-06-01,2025,6,Nýtt,VV,13
+2025-06-01,2025,6,Nýtt,Eftirvagn I (O1),12
+2025-06-01,2025,6,Nýtt,Vörubifreið I (N2),10
+2025-06-01,2025,6,Nýtt,Eftirvagn IV (O4),5
+2025-06-01,2025,6,Nýtt,Eftirvagn f. landbúnað (R3),3
+2025-06-01,2025,6,Nýtt,Vélsleði,3
+2025-06-01,2025,6,Nýtt,TO7,1
+2025-07-01,2025,7,Nýtt,Fólksbifreið (M1),1329
+2025-07-01,2025,7,Nýtt,Sendibifreið (N1),117
+2025-07-01,2025,7,Nýtt,Eftirvagn II (O2),112
+2025-07-01,2025,7,Nýtt,Dráttarvél,98
+2025-07-01,2025,7,Nýtt,VV,66
+2025-07-01,2025,7,Nýtt,Torfæruhjól,44
+2025-07-01,2025,7,Nýtt,Þungt bifhjól,38
+2025-07-01,2025,7,Nýtt,Vörubifreið II (N3),26
+2025-07-01,2025,7,Nýtt,Eftirvagn I (O1),15
+2025-07-01,2025,7,Nýtt,Hópbifreið II (M3),13
+2025-07-01,2025,7,Nýtt,Eftirvagn IV (O4),9
+2025-07-01,2025,7,Nýtt,Létt bifhjól,9
+2025-07-01,2025,7,Nýtt,Vörubifreið I (N2),9
+2025-07-01,2025,7,Nýtt,Eftirvagn f. landbúnað (R3),3
+2025-07-01,2025,7,Nýtt,Eftirvagn III (O3),1
+2025-08-01,2025,8,Nýtt,Fólksbifreið (M1),602
+2025-08-01,2025,8,Nýtt,Sendibifreið (N1),90
+2025-08-01,2025,8,Nýtt,Dráttarvél,85
+2025-08-01,2025,8,Nýtt,Eftirvagn II (O2),59
+2025-08-01,2025,8,Nýtt,Vörubifreið II (N3),25
+2025-08-01,2025,8,Nýtt,VV,22
+2025-08-01,2025,8,Nýtt,Þungt bifhjól,19
+2025-08-01,2025,8,Nýtt,Vörubifreið I (N2),8
+2025-08-01,2025,8,Nýtt,Torfæruhjól,7
+2025-08-01,2025,8,Nýtt,Hópbifreið II (M3),6
+2025-08-01,2025,8,Nýtt,Létt bifhjól,6
+2025-08-01,2025,8,Nýtt,Eftirvagn IV (O4),3
+2025-08-01,2025,8,Nýtt,Eftirvagn f. landbúnað (R3),1
+2025-08-01,2025,8,Nýtt,Hópbifreið I (M2),1
+2025-09-01,2025,9,Nýtt,Fólksbifreið (M1),868
+2025-09-01,2025,9,Nýtt,Sendibifreið (N1),85
+2025-09-01,2025,9,Nýtt,Eftirvagn II (O2),69
+2025-09-01,2025,9,Nýtt,Dráttarvél,52
+2025-09-01,2025,9,Nýtt,VV,24
+2025-09-01,2025,9,Nýtt,Vörubifreið II (N3),18
+2025-09-01,2025,9,Nýtt,Torfæruhjól,16
+2025-09-01,2025,9,Nýtt,Vörubifreið I (N2),12
+2025-09-01,2025,9,Nýtt,Þungt bifhjól,12
+2025-09-01,2025,9,Nýtt,Hópbifreið II (M3),10
+2025-09-01,2025,9,Nýtt,Eftirvagn IV (O4),8
+2025-09-01,2025,9,Nýtt,Hópbifreið I (M2),6
+2025-09-01,2025,9,Nýtt,Létt bifhjól,4
+2025-09-01,2025,9,Nýtt,Eftirvagn I (O1),1
+2025-09-01,2025,9,Nýtt,Eftirvagn f. landbúnað (R3),1
+2025-09-01,2025,9,Nýtt,Vélsleði,1
+2025-10-01,2025,10,Nýtt,Fólksbifreið (M1),755
+2025-10-01,2025,10,Nýtt,Sendibifreið (N1),87
+2025-10-01,2025,10,Nýtt,Dráttarvél,59
+2025-10-01,2025,10,Nýtt,Eftirvagn II (O2),38
+2025-10-01,2025,10,Nýtt,VV,23
+2025-10-01,2025,10,Nýtt,Vörubifreið I (N2),16
+2025-10-01,2025,10,Nýtt,Vörubifreið II (N3),16
+2025-10-01,2025,10,Nýtt,Eftirvagn IV (O4),15
+2025-10-01,2025,10,Nýtt,Torfæruhjól,11
+2025-10-01,2025,10,Nýtt,Þungt bifhjól,10
+2025-10-01,2025,10,Nýtt,Hópbifreið II (M3),7
+2025-10-01,2025,10,Nýtt,Vélsleði,7
+2025-10-01,2025,10,Nýtt,Létt bifhjól,5
+2025-10-01,2025,10,Nýtt,Eftirvagn I (O1),1
+2025-10-01,2025,10,Nýtt,Eftirvagn f. landbúnað (R3),1
+2025-10-01,2025,10,Nýtt,Fjór-/sexhjól,1
+2025-10-01,2025,10,Nýtt,R4,1
+2025-11-01,2025,11,Nýtt,Fólksbifreið (M1),1404
+2025-11-01,2025,11,Nýtt,Sendibifreið (N1),121
+2025-11-01,2025,11,Nýtt,Dráttarvél,71
+2025-11-01,2025,11,Nýtt,Eftirvagn II (O2),35
+2025-11-01,2025,11,Nýtt,Vörubifreið II (N3),26
+2025-11-01,2025,11,Nýtt,VV,20
+2025-11-01,2025,11,Nýtt,Vélsleði,18
+2025-11-01,2025,11,Nýtt,Vörubifreið I (N2),17
+2025-11-01,2025,11,Nýtt,Torfæruhjól,11
+2025-11-01,2025,11,Nýtt,Hópbifreið II (M3),7
+2025-11-01,2025,11,Nýtt,Eftirvagn IV (O4),5
+2025-11-01,2025,11,Nýtt,Þungt bifhjól,5
+2025-11-01,2025,11,Nýtt,R4,3
+2025-11-01,2025,11,Nýtt,Eftirvagn f. landbúnað (R3),1
+2025-11-01,2025,11,Nýtt,Hópbifreið I (M2),1
+2025-11-01,2025,11,Nýtt,Létt bifhjól,1
+2025-12-01,2025,12,Nýtt,Fólksbifreið (M1),1703
+2025-12-01,2025,12,Nýtt,Sendibifreið (N1),206
+2025-12-01,2025,12,Nýtt,Dráttarvél,116
+2025-12-01,2025,12,Nýtt,Vélsleði,58
+2025-12-01,2025,12,Nýtt,Eftirvagn II (O2),49
+2025-12-01,2025,12,Nýtt,Torfæruhjól,43
+2025-12-01,2025,12,Nýtt,Vörubifreið I (N2),40
+2025-12-01,2025,12,Nýtt,Eftirvagn IV (O4),19
+2025-12-01,2025,12,Nýtt,Þungt bifhjól,15
+2025-12-01,2025,12,Nýtt,Hópbifreið II (M3),14
+2025-12-01,2025,12,Nýtt,Vörubifreið II (N3),14
+2025-12-01,2025,12,Nýtt,VV,10
+2025-12-01,2025,12,Nýtt,Eftirvagn f. landbúnað (R3),2
+2025-12-01,2025,12,Nýtt,Létt bifhjól,2
+2025-12-01,2025,12,Nýtt,Hópbifreið I (M2),1
+2026-01-01,2026,1,Nýtt,Fólksbifreið (M1),1381
+2026-01-01,2026,1,Nýtt,Sendibifreið (N1),199
+2026-01-01,2026,1,Nýtt,Eftirvagn II (O2),67
+2026-01-01,2026,1,Nýtt,Vörubifreið I (N2),33
+2026-01-01,2026,1,Nýtt,Dráttarvél,32
+2026-01-01,2026,1,Nýtt,Vörubifreið II (N3),20
+2026-01-01,2026,1,Nýtt,Hópbifreið II (M3),17
+2026-01-01,2026,1,Nýtt,Torfæruhjól,14
+2026-01-01,2026,1,Nýtt,Vélsleði,13
+2026-01-01,2026,1,Nýtt,Þungt bifhjól,13
+2026-01-01,2026,1,Nýtt,VV,12
+2026-01-01,2026,1,Nýtt,Eftirvagn IV (O4),10
+2026-01-01,2026,1,Nýtt,Eftirvagn f. landbúnað (R3),2
+2026-01-01,2026,1,Nýtt,Létt bifhjól,2
+2026-01-01,2026,1,Nýtt,Eftirvagn III (O3),1
+2026-01-01,2026,1,Nýtt,Hópbifreið I (M2),1
+2026-02-01,2026,2,Nýtt,Fólksbifreið (M1),815
+2026-02-01,2026,2,Nýtt,Sendibifreið (N1),81
+2026-02-01,2026,2,Nýtt,Dráttarvél,43
+2026-02-01,2026,2,Nýtt,Eftirvagn II (O2),37
+2026-02-01,2026,2,Nýtt,VV,27
+2026-02-01,2026,2,Nýtt,Vörubifreið II (N3),18
+2026-02-01,2026,2,Nýtt,Hópbifreið II (M3),15
+2026-02-01,2026,2,Nýtt,Vörubifreið I (N2),14
+2026-02-01,2026,2,Nýtt,Eftirvagn IV (O4),13
+2026-02-01,2026,2,Nýtt,Torfæruhjól,13
+2026-02-01,2026,2,Nýtt,Vélsleði,13
+2026-02-01,2026,2,Nýtt,Þungt bifhjól,9
+2026-02-01,2026,2,Nýtt,R4,2
+2026-02-01,2026,2,Nýtt,Eftirvagn f. landbúnað (R3),1
+2026-02-01,2026,2,Nýtt,Hópbifreið I (M2),1
+2026-03-01,2026,3,Nýtt,Fólksbifreið (M1),1283
+2026-03-01,2026,3,Nýtt,Sendibifreið (N1),84
+2026-03-01,2026,3,Nýtt,Eftirvagn II (O2),56
+2026-03-01,2026,3,Nýtt,Dráttarvél,37
+2026-03-01,2026,3,Nýtt,Torfæruhjól,21
+2026-03-01,2026,3,Nýtt,Þungt bifhjól,19
+2026-03-01,2026,3,Nýtt,Vörubifreið I (N2),14
+2026-03-01,2026,3,Nýtt,VV,13
+2026-03-01,2026,3,Nýtt,Vélsleði,13
+2026-03-01,2026,3,Nýtt,Vörubifreið II (N3),12
+2026-03-01,2026,3,Nýtt,Hópbifreið II (M3),6
+2026-03-01,2026,3,Nýtt,Eftirvagn IV (O4),4
+2026-03-01,2026,3,Nýtt,Létt bifhjól,4
+2026-03-01,2026,3,Nýtt,Eftirvagn f. landbúnað (R3),1
+2026-04-01,2026,4,Nýtt,Fólksbifreið (M1),1033
+2026-04-01,2026,4,Nýtt,Sendibifreið (N1),126
+2026-04-01,2026,4,Nýtt,Eftirvagn II (O2),84
+2026-04-01,2026,4,Nýtt,Dráttarvél,80
+2026-04-01,2026,4,Nýtt,Þungt bifhjól,29
+2026-04-01,2026,4,Nýtt,VV,27
+2026-04-01,2026,4,Nýtt,Torfæruhjól,17
+2026-04-01,2026,4,Nýtt,Vörubifreið I (N2),17
+2026-04-01,2026,4,Nýtt,Létt bifhjól,16
+2026-04-01,2026,4,Nýtt,Vörubifreið II (N3),11
+2026-04-01,2026,4,Nýtt,Hópbifreið II (M3),9
+2026-04-01,2026,4,Nýtt,Vélsleði,7
+2026-04-01,2026,4,Nýtt,Eftirvagn I (O1),4
+2026-04-01,2026,4,Nýtt,Eftirvagn IV (O4),2
+2026-04-01,2026,4,Nýtt,R4,2
+2026-04-01,2026,4,Nýtt,Eftirvagn f. landbúnað (R3),1
+2026-04-01,2026,4,Nýtt,Hópbifreið I (M2),1
+2026-04-01,2026,4,Nýtt,S2,1
+2026-05-01,2026,5,Nýtt,Dráttarvél,4
+2026-05-01,2026,5,Nýtt,Fólksbifreið (M1),1
