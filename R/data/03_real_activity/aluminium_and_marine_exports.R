@@ -2,6 +2,7 @@
 
 # 1.0.0 SETUP ----
 library(tidyverse)
+library(arrow)
 
 
 # 2.0.0 DATA ----
