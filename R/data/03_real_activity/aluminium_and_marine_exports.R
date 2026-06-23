@@ -9,7 +9,7 @@ library(arrow)
 
 data_old_tbl <-
   read_csv2(
-    "https://px.hagstofa.is:443/pxis/sq/7d063f88-9258-44e5-895a-eec7d485d3db"
+    "https://px.hagstofa.is:443/pxis/sq/5cc8d463-b823-41ce-9523-c93b9e1ef904"
   ) |>
   set_names("date", "marine", "aluminum")
 
