@@ -20,6 +20,10 @@
 #   FINSTATS.MONETARY.NEWCREDIT.TABLE   -> new HH mortgage flow (51)
 # Row/sheet positions below were read from each workbook's own captions (verified
 # 2026-06; the NEWCREDIT rows match the reference repo's mapping).
+#
+# Values are stored RAW: M.kr. for the money/credit levels (47, 48, 49, 51) and a
+# percent for the indexed-mortgage share (50). The §E Δln transform for the level
+# series is applied centrally at the modelling step (10_assemble.R), not here.
 
 
 # 1.0.0 SETUP ----
@@ -107,14 +111,13 @@ gagnabanki_rows <- function(xlsx, sheet, header_row, first_col, groups) {
 
 # 2.1.0 Broad money M3 (gagnabanki: monetary / BROADMONEY) ----
 # 47: M3. Sheet "I", serial date header in row 8, data from col B (2).
-# Row 12 = "Peningamagn og sparifé (M3) / Broad money (M3)". M.kr.
+# Row 12 = "Peningamagn og sparifé (M3) / Broad money (M3)". Raw M.kr.
 m3_tbl <-
   local({
     xlsx <- gagnabanki_report_xlsx("monetary", "FINSTATS.MONETARY.BROADMONEY.TABLE")
     gagnabanki_rows(xlsx, sheet = "I", header_row = 8, first_col = 2,
                     groups = list(m3 = 12L))
-  }) |>
-  mutate(m3 = log(m3))
+  })
 
 
 # 2.2.0 Credit stock by sector + indexed-mortgage share (monetary / LOANS) ----
@@ -150,9 +153,7 @@ credit_tbl <-
   mutate(
     mortgage_total    = mortgage_indexed + mortgage_nonidx + mortgage_fx,
     il_mortgage_share = if_else(mortgage_total > 0,
-                                mortgage_indexed / mortgage_total * 100, NA_real_),
-    credit_households = log(credit_households),
-    credit_businesses = log(credit_businesses)
+                                mortgage_indexed / mortgage_total * 100, NA_real_)
   ) |>
   select(date, credit_households, credit_businesses, il_mortgage_share)
 
@@ -161,15 +162,13 @@ credit_tbl <-
 # 51: new household residential-mortgage credit, net of pre-/over-payments, M.kr.
 # Sheet "I", serial date header in row 10, data from col B (2). The household
 # residential-mortgage rows (floating + fixed) under the "Ný útlán" block:
-#   43 + 44 -> total new HH mortgages. A flow measure, logged for Δln.
+#   43 + 44 -> total new HH mortgages. A flow measure, stored raw (M.kr.).
 new_mortgage_tbl <-
   local({
     xlsx <- gagnabanki_report_xlsx("monetary", "FINSTATS.MONETARY.NEWCREDIT.TABLE")
     gagnabanki_rows(xlsx, sheet = "I", header_row = 10, first_col = 2,
-                    groups = list(new_mortgages_total = c(43L, 44L)))
-  }) |>
-  mutate(new_mortgage_lending = log(new_mortgages_total)) |>
-  select(date, new_mortgage_lending)
+                    groups = list(new_mortgage_lending = c(43L, 44L)))
+  })
 
 
 # 3.0.0 SAVE ----

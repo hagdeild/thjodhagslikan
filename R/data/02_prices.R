@@ -2,6 +2,7 @@
 
 # 1.0.0 SETUP ----
 library(tidyverse)
+library(arrow)
 
 # 1.1.0 Helper functions ----
 fix_date <- function(x) {
@@ -48,9 +49,7 @@ cpi_tbl <-
   mutate(
     date = fix_date(date),
     cpi = cpi / 10,
-    cpi_less_housing = cpi_less_housing / 10,
-    cpi = log(cpi),
-    cpi_less_housing = log(cpi_less_housing)
+    cpi_less_housing = cpi_less_housing / 10
   )
 
 
@@ -79,8 +78,7 @@ coicop_tbl <-
   mutate(
     date = fix_date(date),
     coicop = str_remove(coicop, "^\\d+\\s+"),
-    gildi = gildi / 10,
-    gildi = log(gildi)
+    gildi = gildi / 10
   ) |>
   pivot_wider(names_from = coicop, values_from = gildi) |>
   janitor::clean_names()
@@ -94,8 +92,7 @@ byggingarvisitala_tbl <-
   set_names("date", "byggingarvisitala") |>
   mutate(
     date = fix_date(date),
-    byggingarvisitala = byggingarvisitala / 10,
-    byggingarvisitala = log(byggingarvisitala)
+    byggingarvisitala = byggingarvisitala / 10
   )
 
 
@@ -120,11 +117,6 @@ import_price_new_tbl <-
   )
 
 import_price_tbl <- splice_series(import_price_old_tbl, import_price_new_tbl)
-
-import_price_tbl <- import_price_tbl |>
-  mutate(
-    import = log(import)
-  )
 
 
 # 2.5.0 Innlendar vörur ----
@@ -155,8 +147,7 @@ husnaedi_tbl <-
   ) |>
   set_names("date", "husnaedisverd") |>
   mutate(
-    date = fix_date(date),
-    husnaedisverd = log(husnaedisverd)
+    date = fix_date(date)
   )
 
 
