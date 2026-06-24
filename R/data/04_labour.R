@@ -1,8 +1,18 @@
 # Vinnumarkaðstengd gögn
 
+# C. Labour market
+#
+# Monthly registered unemployment + quarterly wage index, hours, and participation
+# (macro-data-for-favar.md §C, series 31-36). Sources: Vinnumálastofnun (monthly
+# unemployment) and Hagstofa PxWeb (quarterly launavísitala / vinnumarkaður).
+# Values stored RAW; the §C transform/interpolation is applied centrally in
+# pipeline.R. Unemployment is monthly; the wage/hours/participation series are
+# native quarterly (first-of-period dates) — kept ragged, not interpolated here.
+
 # 1.0.0 SETUP ----
 library(tidyverse)
 library(readxl)
+library(arrow)
 
 
 # 2.0.0 DATA ----
@@ -60,18 +70,29 @@ laun_tbl <-
     launavisitala = launavisitala / 10
   )
 
-# 2.3.0 Unnar klukkustundir ----
+# 2.3.0 Unnar klukkustundir, atvinnuþátttaka og hlutfall starfandi ----
 
-unnar_stundir_tbl <-
+vmk_tbl <-
   read_csv2(
-    "https://px.hagstofa.is:443/pxis/sq/612680a7-588f-45ba-95e2-d1120e9ca36a"
+    "https://px.hagstofa.is:443/pxis/sq/09dd952e-fa93-47d7-83b4-f82f53e93290"
   ) |>
-  set_names("date", "unnar_stundir") |>
+  set_names(
+    "date",
+    "atvinnuthatttaka",
+    "hlutfall_starfandi",
+    "unnar_stundir"
+  ) |>
   mutate(
     date = make_date(str_sub(date, 1, 4), str_sub(date, 6, 7)),
+    atvinnuthatttaka = atvinnuthatttaka / 10,
+    hlutfall_starfandi = hlutfall_starfandi / 10,
     unnar_stundir = unnar_stundir / 10
   )
 
-# 2.4.0 Atvinnuþátttaka ----
 
-# 2.5.0 Hlutfall starfandi ----
+# 3.0.0 SAVE ----
+
+list(atvinnuleysi_tbl, laun_tbl, vmk_tbl) |>
+  reduce(full_join, by = "date") |>
+  arrange(date) |>
+  write_parquet("data/raw/labour.parquet")

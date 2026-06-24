@@ -5,11 +5,11 @@
 library(tidyverse)
 library(arrow)
 
-parquet_path <- "data/car_registrations.parquet"
+parquet_path <- "data/raw/car_registrations.parquet"
 
 if (!file.exists(parquet_path)) {
   stop(
-    "data/car_registrations.parquet not found. ",
+    "data/raw/car_registrations.parquet not found. ",
     "Run R/data/03_real_activity/car_registrations_03_combine.R first."
   )
 }

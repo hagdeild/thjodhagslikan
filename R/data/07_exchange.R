@@ -16,7 +16,7 @@
 # The feed is DAILY; each series is aggregated to the calendar-month MEAN, dated
 # to the first of the month. Values are stored RAW (levels): ISK per unit of
 # foreign currency, and the index for the TWI/REER. The §F Δln transform is
-# applied centrally at the modelling step (10_assemble.R), not here.
+# applied centrally at the modelling step (pipeline.R), not here.
 #
 # The REER is not on the XML feed (groups 9/10 carry only nominal indices, and
 # the NSDP exchange-rate code is nominal + a rolling 12-month window). It is taken
@@ -103,4 +103,4 @@ reer_tbl <-
 fx_tbl |>
   full_join(reer_tbl, by = "date") |>
   arrange(date) |>
-  write_parquet("data/exchange.parquet")
+  write_parquet("data/raw/exchange.parquet")

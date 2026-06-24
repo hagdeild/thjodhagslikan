@@ -133,7 +133,7 @@ financial_tbl <-
 # 4.0.0 SAVE ----
 
 financial_tbl |>
-  write_parquet("data/financial.parquet")
+  write_parquet("data/raw/financial.parquet")
 
 
 # ── Gaps: section-D series with NO machine-readable Seðlabanki source ───────────

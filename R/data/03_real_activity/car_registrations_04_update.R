@@ -1,8 +1,8 @@
 # MONTHLY: Appends the latest month(s) of new vehicle registrations to the combined parquet.
-# Reads data/car_registrations.parquet, fetches only months not yet covered from the
+# Reads data/raw/car_registrations.parquet, fetches only months not yet covered from the
 # Samgöngustofa Power BI report, updates both the long-format archive
-# (data/car_registrations_present.{csv,rds}) and the combined series
-# (data/car_registrations.{parquet,csv}). Assumes _03_combine.R has been run at least once.
+# (data/raw/car_registrations_present.{csv,rds}) and the combined series
+# (data/raw/car_registrations.{parquet,csv}). Assumes _03_combine.R has been run at least once.
 
 library(tidyverse)
 library(arrow)
@@ -36,7 +36,7 @@ included_classes <- c(
 )
 
 # ── Determine which months are missing ────────────────────────────────────────
-existing <- read_parquet("data/car_registrations.parquet")
+existing <- read_parquet("data/raw/car_registrations.parquet")
 last_period <- max(existing$period)
 current_period <- floor_date(Sys.Date(), "month")
 
@@ -75,13 +75,13 @@ if (first_to_fetch > last_complete) {
     arrange(period, desc(registrations), vehicle_class)
 
   # ── Update the long-format archive ──────────────────────────────────────────
-  present_archive <- readRDS("data/car_registrations_present.rds")
+  present_archive <- readRDS("data/raw/car_registrations_present.rds")
   present_updated <- bind_rows(present_archive, new_rows_long) |>
     distinct() |>
     arrange(period, desc(registrations), vehicle_class)
 
-  write_csv(present_updated, "data/car_registrations_present.csv")
-  saveRDS(present_updated, "data/car_registrations_present.rds")
+  write_csv(present_updated, "data/raw/car_registrations_present.csv")
+  saveRDS(present_updated, "data/raw/car_registrations_present.rds")
 
   # ── Aggregate new months to the combined-series schema ──────────────────────
   new_rows <- new_rows_long |>
@@ -99,8 +99,8 @@ if (first_to_fetch > last_complete) {
 
   stopifnot(!anyDuplicated(updated$period))
 
-  write_parquet(updated, "data/car_registrations.parquet")
-  write_csv(updated, "data/car_registrations.csv")
+  write_parquet(updated, "data/raw/car_registrations.parquet")
+  write_csv(updated, "data/raw/car_registrations.csv")
 
   message(sprintf(
     "Done. Series now covers %s to %s (%d months).",

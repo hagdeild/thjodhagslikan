@@ -23,7 +23,7 @@
 #
 # Values are stored RAW: M.kr. for the money/credit levels (47, 48, 49, 51) and a
 # percent for the indexed-mortgage share (50). The §E Δln transform for the level
-# series is applied centrally at the modelling step (10_assemble.R), not here.
+# series is applied centrally at the modelling step (pipeline.R), not here.
 
 
 # 1.0.0 SETUP ----
@@ -177,7 +177,7 @@ m3_tbl |>
   full_join(credit_tbl, by = "date") |>
   full_join(new_mortgage_tbl, by = "date") |>
   arrange(date) |>
-  write_parquet("data/money_credit.parquet")
+  write_parquet("data/raw/money_credit.parquet")
 
 
 # ── Gaps: section-E series not wired ───────────────────────────────────────────

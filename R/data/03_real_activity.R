@@ -1,6 +1,6 @@
 # ── 03_real_activity.R ────────────────────────────────────────────────────────
 # Orchestrates all real-activity sub-modules.
-# Each sub-file appends its series to the environment; 10_assemble.R joins them.
+# Each sub-file appends its series to the environment; pipeline.R joins them.
 # ──────────────────────────────────────────────────────────────────────────────
 
 .real_activity_dir <- (function() {

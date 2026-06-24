@@ -23,7 +23,7 @@ historical <- historical_raw |>
   distinct()
 
 # ── Present series (2020-01 – present) ────────────────────────────────────────
-present_raw <- readRDS("data/car_registrations_present.rds") |>
+present_raw <- readRDS("data/raw/car_registrations_present.rds") |>
   filter(period < floor_date(today(), "month"))
 
 present <- present_raw |>
@@ -75,10 +75,10 @@ message(sprintf(
 ))
 
 # ── Write ──────────────────────────────────────────────────────────────────────
-dir.create("data", showWarnings = FALSE, recursive = TRUE)
-write_parquet(car_reg, "data/car_registrations.parquet")
-write_csv(car_reg, "data/car_registrations.csv")
+dir.create("data/raw", showWarnings = FALSE, recursive = TRUE)
+write_parquet(car_reg, "data/raw/car_registrations.parquet")
+write_csv(car_reg, "data/raw/car_registrations.csv")
 
 message(
-  "Done. Written to data/car_registrations.parquet and data/car_registrations.csv"
+  "Done. Written to data/raw/car_registrations.parquet and data/raw/car_registrations.csv"
 )

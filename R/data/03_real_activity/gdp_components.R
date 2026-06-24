@@ -29,4 +29,4 @@ data_tbl <-
 
 
 data_tbl |>
-  write_parquet("data/gdp.parquet")
+  write_parquet("data/raw/gdp.parquet")

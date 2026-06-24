@@ -33,4 +33,4 @@ tourism_tbl <- splice_series(new_tbl, old_tbl) |>
 
 
 tourism_tbl |>
-  write_parquet("data/tourism.parquet")
+  write_parquet("data/raw/tourism.parquet")

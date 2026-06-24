@@ -71,4 +71,4 @@ data_new_tbl <-
 
 
 data_new_tbl |>
-  write_parquet("data/aluminium_and_marine_exports.parquet")
+  write_parquet("data/raw/aluminium_and_marine_exports.parquet")

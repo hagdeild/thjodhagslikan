@@ -160,4 +160,4 @@ cpi_tbl |>
   left_join(domestic_tbl) |>
   left_join(husnaedi_tbl) |>
 
-  write_parquet("data/prices.parquet")
+  write_parquet("data/raw/prices.parquet")

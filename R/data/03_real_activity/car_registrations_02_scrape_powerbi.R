@@ -1,6 +1,6 @@
 # ONE-TIME (then monthly via _04_update.R): Scrapes new vehicle registrations (2020–present)
 # from the Samgöngustofa Power BI report. Writes long-format data to
-# data/car_registrations_present.{csv,rds}. The _03_combine.R and _04_update.R
+# data/raw/car_registrations_present.{csv,rds}. The _03_combine.R and _04_update.R
 # scripts depend on this output.
 
 # Resolve script directory whether run via source() or interactively (RStudio).
@@ -44,13 +44,13 @@ results <- pmap(
 car_reg <- bind_rows(results) |>
   arrange(period, desc(registrations), vehicle_class)
 
-out_dir <- "data"
+out_dir <- "data/raw"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 write_csv(car_reg, file.path(out_dir, "car_registrations_present.csv"))
 saveRDS(car_reg, file.path(out_dir, "car_registrations_present.rds"))
 
 message(sprintf(
-  "Done. %d rows saved to data/car_registrations_present.csv",
+  "Done. %d rows saved to data/raw/car_registrations_present.csv",
   nrow(car_reg)
 ))
