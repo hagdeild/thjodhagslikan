@@ -122,6 +122,16 @@ the contract before STEP 1.
 
 ## STEP 1 — `pipeline.R` assembly (only after STEP 0 is confirmed)
 
+**STATUS: built (2026-06-24).** `R/pipeline.R` produces a 282-month panel (2003-01 → 2026-06,
+81 series) and writes `data/processed/panel_monthly_levels.parquet`,
+`panel_monthly.parquet`, and `column_dictionary.csv`. Decisions baked in: panel start
+2003-01 with leading NAs for late-starting series (car registrations 2004-01 — backcast TBD);
+internal gaps filled type-aware (spline for index/quantity, LOCF for step-function rates such
+as `ecb_mro`) while leading pre-history NAs are left untouched; 40 series Δln (×100), 41 level;
+`new_mortgage_lending` kept as level (flow hits ≤0); interpolated `gdp` flagged
+`panel_role = "bvar_only"`. The survey breakeven family is prefixed `be_survey_*` to avoid
+colliding with the financial bond-spread `breakeven_5y`.
+
 `pipeline.R` reads `data/raw/*.parquet` (it does **not** re-source the fetchers — assembly
 is offline and deterministic; fetching is a separate, manual, network-bound step), and:
 

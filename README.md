@@ -106,10 +106,11 @@ and policy-rate cost of extra wage growth), not absolute conditional forecasts.
 | Data: financial (05) | wired (policy rate, REIBOR, par-yield curve, breakeven) |
 | Data: money/credit (06) | wired (M3, credit, **IL-mortgage share** — the key variable) |
 | Data: prices (02_prices) | wired (CPI, byggingarvísitala, import, domestic) |
-| Data: labour / external / expectations / fiscal | partial — check section files |
+| Data: labour / external / expectations | wired (04/08/09 → labour, external, expectations parquets) |
+| Data: fiscal (I) | not wired — no source yet |
 | `data/raw/` parquets | populated for wired sources |
-| `data/processed/` assembled panel | **NOT done** — assembly step is the active phase |
-| `pipeline.R` | **EMPTY stub** — needs to become the assembly entry point |
+| `data/processed/` assembled panel | wired — `panel_monthly{,_levels}.parquet` + `column_dictionary.csv` (282 mo, 81 series) |
+| `pipeline.R` | wired — reads `data/raw/`, interpolates Q→M, applies transforms, writes `data/processed/` |
 | MF-BVAR-FAVAR engine | complete |
 | Monetary-effectiveness suite | spec written; STEP 0 not yet run |
 | Structural BVAR | running, but open issues (below) |
@@ -126,15 +127,18 @@ and policy-rate cost of extra wage growth), not absolute conditional forecasts.
 ---
 
 ## Next actions
-1. **Fill `pipeline.R`** — the assembly entry point the data scripts already reference as
-   `10_assemble.R`. It should source each section, apply central transforms, join to a
-   monthly panel, and write `data/processed/`. This unblocks both FAVAR and the structural BVAR.
-2. **Finish the data layer** — complete labour / external / expectations / fiscal sections to
-   reach the 60–80 series target.
-3. **Run STEP 0** of `PROJECT_SPEC.md` (data-contract exploration) before any model code in
-   the monetary-effectiveness suite.
-4. Resolve the structural-BVAR open issues; test the 7th-variable (current account) addition.
-5. Research deliverables: historical decomposition of monetary policy's contribution to
+1. ✅ **`pipeline.R` assembly** — done. Reads `data/raw/`, interpolates Q→M (GDP via
+   Denton-Cholette; wage/hours/participation/expectations via spline), applies central
+   transforms, writes `data/processed/panel_monthly{,_levels}.parquet` + `column_dictionary.csv`
+   (282 months, 81 series). STEP 0 contract is in `R/data/00_explore.R`.
+2. **Feed the panel to the engines** — wire `mf_bvar_favar.R` (FAVAR indicator panel = sections
+   A–I minus core-block minus interpolated GDP) and the structural BVAR (core block + breakeven)
+   to `data/processed/panel_monthly.parquet`.
+3. **Backcast car registrations** to 2003 (reversed-ARIMA or regression on other monthly series)
+   to remove the 12 leading NAs that currently gate the fully-populated window at 2004-01.
+4. **Finish the data layer** — fiscal section (I) still unwired; optionally add deferred series.
+5. Resolve the structural-BVAR open issues; test the 7th-variable (current account) addition.
+6. Research deliverables: historical decomposition of monetary policy's contribution to
    2022–2025 disinflation; counterfactual holding the policy rate constant.
 
 ---
