@@ -102,6 +102,7 @@ car_reg     <- rd("car_registrations") |> select(date, registrations)  # drop `s
 retail      <- rd("retail_turnover")
 resinv      <- rd("residential_investment")
 financial   <- rd("financial")
+retail_rates <- rd("retail_rates")
 money       <- rd("money_credit")
 exchange    <- rd("exchange")
 external    <- rd("external")
@@ -190,7 +191,7 @@ fiscal_monthly <- quarterly_cols_to_monthly(
 
 sources <- list(
   prices, ppi, card, tourism, alu_marine, car_reg, retail_monthly, resinv_monthly,
-  financial, money, exchange, external, labour_monthly, employment,
+  financial, retail_rates, money, exchange, external, labour_monthly, employment,
   vacancies_monthly, fiscal_monthly, gdp_monthly, expect_monthly
 )
 
@@ -209,7 +210,8 @@ locf_cols <- c(
   "collateral_lending_rate", "reibor_3m", "reibor_6m",
   "govt_yield_nominal_5y", "govt_yield_nominal_10y",
   "govt_yield_indexed_5y", "govt_yield_indexed_10y", "breakeven_5y",
-  "fed_funds", "ecb_mro", "policy_rate_se", "policy_rate_no", "policy_rate_dk"
+  "fed_funds", "ecb_mro", "policy_rate_se", "policy_rate_no", "policy_rate_dk",
+  "mortgage_rate_nonidx", "mortgage_rate_indexed", "deposit_rate"
 )
 
 panel_levels <-
@@ -294,6 +296,7 @@ source_of <- c(
   setNames(rep("retail_turnover", length(retail_cols)), retail_cols),
   setNames(rep("residential_investment", length(resinv_cols)), resinv_cols),
   setNames(rep("financial", ncol(financial) - 1), setdiff(names(financial), "date")),
+  setNames(rep("retail_rates", ncol(retail_rates) - 1), setdiff(names(retail_rates), "date")),
   setNames(rep("money_credit", ncol(money) - 1), setdiff(names(money), "date")),
   setNames(rep("exchange", ncol(exchange) - 1), setdiff(names(exchange), "date")),
   setNames(rep("external", ncol(external) - 1), setdiff(names(external), "date")),

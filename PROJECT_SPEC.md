@@ -1,26 +1,35 @@
 # PROJECT_SPEC.md — `thjodhagslikan`
 
-Spec for the **data + forecasting** repo of the VR Iceland macro suite. This is the
-authoritative instruction file for any agent (Claude Code) working in `thjodhagslikan`.
+Authoritative instruction file for any agent (Claude Code) working in `thjodhagslikan`.
 Read it before writing code.
+
+## What this repo is
+
+`thjodhagslikan` is the **forecasting + wage-scenario** repo of VR's macro work. Its two
+deliverables:
+
+1. **Best-possible forecast** of the Icelandic economy (CPI, policy rate, exchange rate,
+   unemployment, activity, …) via BVAR / FAVAR / a blend. Accuracy (low forecast error)
+   is the sole criterion for the forecasting engine — whatever specification forecasts
+   best wins.
+2. **Scenario analysis** for kjarasamningar: IRFs *and* conditional "what-if" scenarios
+   (e.g. "wages +X% → what happens to policy rate, inflation, EER, unemployment"),
+   reported as **differences between scenarios**.
+
+There is **no policy-rate research thesis in this repo.** Do not describe the project as
+arguing that the Seðlabanki policy rate is the wrong tool, and do not treat the
+inflation-linked (verðtryggð) mortgage channel as a thesis. The IL-mortgage share is used
+here only as one predictor among many.
 
 ## Scope of THIS repo
 
-`thjodhagslikan` owns two things:
+`thjodhagslikan` owns:
 
 1. **The shared data layer** — all ingestion scripts under `R/data/`, producing raw
    per-source parquet files and one assembled monthly panel.
 2. **Two modelling engines** that consume that panel:
    - **MF-BVAR-FAVAR** — the 81-variable workhorse forecasting model.
    - **Structural BVAR** — the 6-variable kjarasamningar wage-scenario model.
-
-It does **not** own the monetary-policy-effectiveness suite. That is a separate repo,
-`virkni_styrivaxta` (sign-restricted SVAR + local projections + state-dependent LP, with
-Jarociński–Karadi decomposition). It has its own `PROJECT_SPEC.md` and its own
-`data/` inputs (`main-data.xlsx`, `mpc_announcement.csv`, `breakeven_5y_monthly.csv`).
-Do not look for those files here; do not treat that spec's STEP 0 as a gate on this repo.
-The two repos are kept narratively consistent (shared core observables) but are
-physically independent.
 
 ## Working agreement
 
@@ -60,8 +69,8 @@ R/data/
   07_exchange.R       F. Exchange rates -> data/raw/exchange.parquet
   08_external.R       G. External/global (FRED, Eurostat, BIS, FAO, NY Fed)   [status: check]
   09_expectations.R   H. Expectations & surveys                               [status: check]
-  (fiscal)            I. Fiscal                                               [status: check]
-pipeline.R            ASSEMBLY ENTRY POINT — currently empty (see below)
+  08_fiscal.R         I. Fiscal (annual only — mixed-frequency block)
+pipeline.R            ASSEMBLY ENTRY POINT
 macro-data-for-favar.md   the 81-series variable spec (sections A–I), authoritative for
                           which series exist, their Freq, and their Transform
 ```
@@ -86,9 +95,9 @@ from 1994). The assembly step tolerates NA-leading columns.
 
 ### Key construction rules (locked — do not re-derive)
 
-- **IL-mortgage share** (the thesis's key variable, series 50): computed from the
-  **stock** of indexed vs total mortgages, not new-lending flow. Flow nets pre-/over-
-  payments and is unstable. Already wired in `06_money_credit.R`.
+- **IL-mortgage share** (series 50): computed from the **stock** of indexed vs total
+  mortgages, not new-lending flow. Flow nets pre-/over-payments and is unstable. Already
+  wired in `06_money_credit.R`. (Used here as an ordinary predictor — not a thesis variable.)
 - **Brent crude**: keep in **USD only**. Do not multiply by ISK/USD — that conflates oil
   and FX shocks.
 - **Policy rate**: 7-day term-deposit rate (Meginvextir, Seðlabanki TimeSeriesID 17923).
@@ -98,29 +107,18 @@ from 1994). The assembly step tolerates NA-leading columns.
 
 ---
 
-## STEP 0 — Data-contract exploration (MANDATORY before `pipeline.R` or any model code)
+## STEP 0 — Data-contract exploration
 
-This is the gate for this repo. `pipeline.R` is the assembly step the source scripts
-already reference (as `10_assemble.R` in their comments). Before writing or modifying it,
-the agent must first produce a **read-only exploration script** that reports the contract
-of every `data/raw/*.parquet` and stops. No assembly logic, no modelling, no transforms
-in STEP 0 — just discover and report what is actually on disk, because the fetchers hit
-live APIs and column sets/coverage drift.
-
-STEP 0 script must, for each parquet in `data/raw/`:
-1. Print path, row count, and `date` min/max.
-2. Print every column name, its type, and its NA-leading run length (ragged left edge).
-3. Print the inferred frequency (monthly vs quarterly) from the `date` spacing.
-4. Flag any column whose name does not map to a series in `macro-data-for-favar.md`.
-5. Flag any spec series (A–I) with **no** corresponding column anywhere (coverage gaps).
-6. Report the common date window across all monthly sources (the panel's usable span).
-
-Output is a printed report only. The agent then **stops and waits** for Vidar to confirm
-the contract before STEP 1.
+`R/data/00_explore.R` is the read-only contract report: for each `data/raw/*.parquet` it
+prints path, row count, `date` min/max, every column name + type + NA-leading run length,
+inferred frequency, columns that don't map to a `macro-data-for-favar.md` series, spec
+series with no column anywhere, and the common monthly window. It produces a printed report
+only — no assembly, no transforms. Run/refresh it whenever the raw parquets may have drifted
+(fetchers hit live APIs and column sets/coverage move).
 
 ---
 
-## STEP 1 — `pipeline.R` assembly (only after STEP 0 is confirmed)
+## STEP 1 — `pipeline.R` assembly
 
 **STATUS: built (2026-06-24).** `R/pipeline.R` produces a 282-month panel (2003-01 → 2026-06,
 81 series) and writes `data/processed/panel_monthly_levels.parquet`,
@@ -144,31 +142,30 @@ is offline and deterministic; fetching is a separate, manual, network-bound step
      `quarterly_to_monthly` (natural spline) from `01_helpers.R`, unless an indicator
      series is available for proper disaggregation.
 2. **Apply central transforms** per the `Transform` column of `macro-data-for-favar.md`:
-   Δln for real/nominal quantities and prices; levels for rates and ratios. Use
-   **CPI excluding housing** as the headline inflation outcome (avoids the mechanical
-   rate→CPI link from the pre-June-2024 user-cost housing imputation and the June-2024
-   methodology break).
+   Δln for real/nominal quantities and prices; levels for rates and ratios. **CPI excluding
+   housing** is the preferred headline inflation outcome (avoids the mechanical rate→CPI link
+   from the pre-June-2024 user-cost housing imputation and the June-2024 methodology break).
 3. **Join** all sources on `date` (full join) into one wide monthly panel.
-4. **Write** `data/processed/panel_monthly.parquet` (model-ready) and, if useful, a
-   levels-vs-transformed companion plus a column dictionary.
+4. **Write** `data/processed/panel_monthly.parquet` (model-ready), a levels companion, and a
+   column dictionary.
 
-Output two things downstream models can rely on: the FAVAR indicator panel (sections
-A–I minus the VAR-block observables and minus interpolated GDP) and the VAR/BVAR core
-block (policy rate, CPI ex-housing, activity, EER, IL share, wage index).
+Output two things downstream models rely on: the FAVAR indicator panel (sections A–I minus
+the VAR-block observables and minus interpolated GDP) and the VAR/BVAR core block (policy
+rate, CPI ex-housing, activity, EER, IL share, wage index).
 
 ---
 
 ## Engine specs (consume `data/processed/`)
 
-### MF-BVAR-FAVAR
+### MF-BVAR-FAVAR — forecasting (accuracy is the objective)
 Engine `mf_bvar_favar.R` is complete: PCA factor extraction (Bai-Ng), Minnesota prior,
-mixed-frequency Durbin-Koopman simulation smoother for quarterly GDP, Gibbs sampler,
-sign-restriction IRFs, historical decomposition, Waggoner-Zha conditional forecasting.
-`tidyverse` + `MASS` only. Real chain-weighted GDP in the VAR block; aluminium export
-**value in ISK** (not volume) in the indicator panel. The 8 univariate + 5 neural models
-(Python) are Tier-2 benchmarks.
+mixed-frequency Durbin-Koopman simulation smoother for quarterly GDP, Gibbs sampler, IRFs,
+historical decomposition, Waggoner-Zha conditional forecasting. `tidyverse` + `MASS` only.
+Real chain-weighted GDP in the VAR block; aluminium export **value in ISK** (not volume) in
+the indicator panel. The 8 univariate + 5 neural models (Python) are Tier-2 benchmarks to
+beat. Selection criterion: out-of-sample forecast error.
 
-### Structural BVAR (kjarasamningar)
+### Structural BVAR — kjarasamningar scenarios
 6 variables: log wage index, output gap, log CPI, 5-year breakeven, policy rate, log
 trade-weighted EER. Condition wage scenarios on the **continuous VR wage index** (never
 discrete negotiated wages — January-only spikes create large negative Waggoner-Zha shocks
@@ -186,9 +183,10 @@ output-gap response; candidate fix = add current account as a 7th variable
 
 ## Principles (do not re-litigate)
 
-- **Transmission identification**: the dominant Icelandic channel (wages → demand/current
-  account → ISK depreciation → import prices → CPI) is blocked by construction under a
-  Cholesky ordering with wages first and EER last. Any scheme must account for this.
+Modelling lessons only — no policy thesis attached.
+- **Scenario identification**: the wages → demand → current account → ISK depreciation →
+  import prices → CPI channel is blocked by construction under a Cholesky ordering with
+  wages first and EER last. Any scheme must account for this.
 - **Wage–CPI**: no significant short-run link; only a long-run cointegrating relationship.
   Impose the vector and loading externally (Daníelsson); freely estimated loadings on wages
   in the CPI equation come out near zero.
@@ -201,4 +199,4 @@ output-gap response; candidate fix = add current account as a 7th variable
   Divisions 01–05, 10, 11 stable; 07–09 need splicing or Eurostat HICP back-series.
   Headline CPI and indexation indices unaffected.
 - **Model-suite philosophy**: narrative consistency > numerical agreement. Keep core
-  observables identical across models so the economic stories stay compatible.
+  observables identical across the two engines so the economic stories stay compatible.

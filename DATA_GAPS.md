@@ -49,18 +49,19 @@ Wired: 19, 20 (card turnover dom/foreign), 21 (vehicle regs), 27 (tourist arriva
 Wired: 32 (unemployment rate), 34 (wage index/launavísitala), 35 (hours/unnar stundir),
 36 (participation/atvinnuþátttaka). All in `labour.parquet`.
 
-## D. Interest rates (10) — 6 wired, 4 not
+## D. Interest rates (10) — 9 wired, 1 not
 
 | # | Series | Status | Notes |
 |---|--------|--------|-------|
-| 40 | Non-indexed mortgage rate (new loans) | 🔴 UNAVAILABLE | **Audited both Seðlabanki services** — not in xmltimeseries feed (groups 1/4/20 only) nor gagnabanki (`/api/config` "interests" = key rate + REIBOR + govt curve only). Exists only in FS/FME **PDF tables**. |
-| 41 | Indexed mortgage rate (new loans) | 🔴 UNAVAILABLE | Same as 40. |
-| 42 | Corporate lending rate (non-indexed) | 🔴 UNAVAILABLE | Same as 40. gagnabanki has loan *volumes* but not the corresponding *rates*. |
-| 46 | Deposit rate (household, avg) | 🔴 UNAVAILABLE | Same as 40. |
+| 40 | Non-indexed mortgage rate (new loans) | 🟢 WIRED | `05_retail_rates.R` → `retail_rates.parquet`, `mortgage_rate_nonidx`. Seðlabanki "Bankavextir og dráttarvextir" (gagnatorg/vextir → "Banka- og dráttavextir"); **lowest** non-indexed bond-loan rate (col E), monthly 2003-. Static library item — downloads directly, no SPA scrape. *Was wrongly audited as PDF-only.* (From 2020-04 = weighted-avg bank rates.) |
+| 41 | Indexed mortgage rate (new loans) | 🟢 WIRED | Same file/source, `mortgage_rate_indexed` — lowest indexed bond-loan rate (col H), monthly 2003-. |
+| 42 | Corporate lending rate (non-indexed) | 🔴 UNAVAILABLE | Not in this table (households/general only) nor xmltimeseries/gagnabanki. gagnabanki has loan *volumes* but not the corporate *rate*. Still PDF-only. |
+| 46 | Deposit rate (household, avg) | 🟢 WIRED | Same file/source, `deposit_rate` — "Almennir sparireikningar" (col C), monthly 2003-. |
 
-Wired: 37 (policy rate), 38/39 (REIBOR 3m/6m), 43 (govt nominal yield), 44 (govt indexed
-yield), 45 (breakeven). Plus extra rate-corridor series (current-account, overnight,
-collateral lending) carried as bonus levels.
+Wired: 37 (policy rate), 38/39 (REIBOR 3m/6m), 40/41 (mortgage rates non-idx/indexed),
+43 (govt nominal yield), 44 (govt indexed yield), 45 (breakeven), 46 (deposit rate).
+Plus extra rate-corridor series (current-account, overnight, collateral lending) as
+bonus levels.
 
 ## E. Money, credit & financial conditions (8) — 5 wired, 3 not
 
@@ -113,15 +114,16 @@ breakevens). All in `expectations.parquet`.
 
 ## Summary by status (updated 2026-06-25 — see DATA_INVENTORY.md)
 
-This session wired/resolved 13 of the former backlog items (#15, 22, 31, 33, 79, 80, 81
-wired; #24, 25 proxied; #13, 14 derived; #26, 78 audited to unavailable). Remaining
-not-wired:
+This session wired/resolved 16 of the former backlog items (#15, 22, 31, 33, 40, 41,
+46, 79, 80, 81 wired; #24, 25 proxied; #13, 14 derived; #26, 78 audited to
+unavailable). Remaining not-wired:
 
-- 🔴 **UNAVAILABLE (10)**: 40, 41, 42, 46 (retail bank rates — PDF only); 52 (OMXI), 53 (CDS), 54 (FCI); 69 (Baltic Dry); **26 (electricity — annual/snapshot only)**; **78 (no Icelandic PMI exists)**. *No action unless a paid/manual source is accepted.*
+- 🔴 **UNAVAILABLE (7)**: 42 (corporate lending rate — PDF only); 52 (OMXI), 53 (CDS), 54 (FCI); 69 (Baltic Dry); 26 (electricity — annual/snapshot only); 78 (no Icelandic PMI exists). *No action unless a paid/manual source is accepted.*
 - 🟡 **DEFERRED — wireable but hard (2)**: 76, 77 (Gallup consumer/business confidence — locked in a CB Hagvísar **Power BI embed**; needs a fragile PBI query-API scrape). *The realistic remaining backlog.*
 - 🟢 **DERIVED (5)**: 13, 14 (CPI goods/services from COICOP), 60 (Brent-ISK), 72 (Nordic avg), 81 (now also pulled directly). *Computed at assembly, not gaps.*
 - ⚪ **PROXY/COVERED (5)**: 17 (import price → EER), 23 (IP → aluminium+marine), 24, 25 (building → residential investment), 71 (fish → marine export price).
 
 **Remaining highest-value gap**: 76 consumer confidence (Gallup) — only the Power BI
-embed stands between us and it. The 🔴 retail bank rates (40–42, 46) remain the other
-material gap for the §D pass-through story (CB PDF tables only).
+embed stands between us and it. The retail mortgage + deposit rates (40/41/46) are now
+wired from the Seðlabanki "Bankavextir" table; only the corporate lending rate (42)
+remains PDF-only in §D.

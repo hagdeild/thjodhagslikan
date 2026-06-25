@@ -42,12 +42,14 @@ is the *native* frequency (the monthly panel is assembled in `pipeline.R`).
 | 36 | Participation rate | Hagstofa | Q | deep |
 | — | Employment count (register-based, *bonus*) | Hagstofa VIN10001 (`04_labour_extras.R`) | M | 2005– |
 
-### D. Interest rates — `financial.parquet`
+### D. Interest rates — `financial.parquet`, `retail_rates.parquet`
 | # | Series | Source | Freq |
 |---|--------|--------|------|
 | 37 | Policy rate | Seðlabanki XML | M/daily |
 | 38, 39 | REIBOR 3m / 6m | Seðlabanki XML | M |
+| 40, 41 | **Non-indexed + indexed mortgage rate** (lowest bond-loan rate) | Seðlabanki "Bankavextir" table (`05_retail_rates.R`) | M, 2003- |
 | 43, 44, 45 | Govt nominal yield, indexed yield, breakeven | Seðlabanki XML | M |
+| 46 | **Household deposit rate** (almennir sparireikningar) | Seðlabanki "Bankavextir" table | M, 2003- |
 | — | Rate-corridor extras (current-account, overnight, collateral lending) | Seðlabanki XML | M |
 
 ### E. Money & credit — `money_credit.parquet`
@@ -115,9 +117,7 @@ is the *native* frequency (the monthly panel is assembled in `pipeline.R`).
 | # | Series | Verdict |
 |---|--------|---------|
 | 26 | Electricity consumption | No free machine-readable monthly/deep-history series. Hagstofa (IDN021xx) + Orkustofnun .xlsx are **annual** and lag to ~2020–22; Landsnet `amper.landsnet.is/generation/api/Values` is a **live snapshot** (no history); Iceland is outside ENTSO-E/Nord Pool. Monthly only via paywalled CEIC. |
-| 40, 41 | New-mortgage rates (non-indexed / indexed) | Not in Seðlabanki XML feed nor gagnabanki `/api/config` (audited whole registry). Exists only in FS/FME **PDF tables**. |
-| 42 | Corporate lending rate | Same — gagnabanki has loan *volumes*, not the matching *rates*. |
-| 46 | Household deposit rate | Same — PDF only. |
+| 42 | Corporate lending rate | Not in the Seðlabanki "Bankavextir" table (households/general only), XML feed, or gagnabanki (which has loan *volumes*, not the corporate *rate*). PDF only. (NB #40/41/46 were *also* thought PDF-only but turned out to be in the Bankavextir library Excel — see §1.D.) |
 | 52 | OMXI stock index | No clean free deep-history feed (Yahoo `^OMXIPI` starts 2013 w/ gaps; Nasdaq OMX scrape fragile). |
 | 53 | Sovereign CDS spread | Bloomberg/Refinitiv only (spec said "if avail"). |
 | 54 | Financial conditions index | CB publishes no clean monthly FCI (spec said "if CB publishes"). |
@@ -149,6 +149,7 @@ because Power BI's data export is undocumented and version-fragile.
 | `R/data/02_prices_ppi.R` | `ppi.parquet` | #15 (adds export PPI) |
 | `R/data/04_labour_extras.R` | `vacancies.parquet`, `employment_count.parquet` | #33, #31-adjacent |
 | `R/data/08_fiscal.R` | `fiscal.parquet` | #79/#80/#81 |
+| `R/data/05_retail_rates.R` | `retail_rates.parquet` | #40/#41/#46 |
 | `R/data/04_labour.R` (edited) | adds `unemployment_count` to `labour.parquet` | #31 |
 
 All pulled from the Hagstofa PxWeb JSON API (POST query → CSV) except the

@@ -89,6 +89,9 @@ tryggingar,prices,monthly,dln_x100,factor_panel,2003-01-01
 veitingahus_og_gistithjonusta,prices,monthly,dln_x100,factor_panel,2003-01-01
 resinv_current,residential_investment,quarterly,dln_x100,factor_panel,2003-01-01
 resinv_volume_sa,residential_investment,quarterly,dln_x100,factor_panel,2003-01-01
+deposit_rate,retail_rates,monthly,level,factor_panel,2003-03-01
+mortgage_rate_indexed,retail_rates,monthly,level,factor_panel,2003-03-01
+mortgage_rate_nonidx,retail_rates,monthly,level,factor_panel,2003-03-01
 accommodation,retail_turnover,bimonthly,dln_x100,factor_panel,2008-01-01
 food_service,retail_turnover,bimonthly,dln_x100,factor_panel,2008-01-01
 retail,retail_turnover,bimonthly,dln_x100,factor_panel,2008-01-01
