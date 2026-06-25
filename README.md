@@ -32,7 +32,7 @@ data/
   raw/                      one parquet per source (NOT model-ready)
   processed/                assembled panels (model-ready)
 macro-data-for-favar.md     the 81-series variable spec (sections A–I)
-pipeline.R                  <- assembly entry point (currently EMPTY — see "Next")
+pipeline.R                  <- assembly entry point (reads data/raw/ -> data/processed/)
 ```
 
 **Conventions** (follow these; they are already established in the existing scripts):

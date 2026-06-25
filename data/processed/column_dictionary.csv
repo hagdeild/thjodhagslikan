@@ -4,6 +4,7 @@ marine,aluminium_and_marine_exports,monthly,dln_x100,factor_panel,2003-01-01
 registrations,car_registrations,monthly,dln_x100,factor_panel,2004-01-01
 domestic_card_turnover,card_turnover,monthly,dln_x100,factor_panel,2003-01-01
 foreign_card_turnover,card_turnover,monthly,dln_x100,factor_panel,2003-01-01
+employment,employment_count,monthly,dln_x100,factor_panel,2005-01-01
 isk_eur,exchange,monthly,dln_x100,factor_panel,2003-01-01
 isk_gbp,exchange,monthly,dln_x100,factor_panel,2003-01-01
 isk_usd,exchange,monthly,dln_x100,factor_panel,2003-01-01
@@ -51,10 +52,14 @@ overnight_lending_rate,financial,monthly,level,factor_panel,2003-01-01
 policy_rate,financial,monthly,level,core_block,2003-01-01
 reibor_3m,financial,monthly,level,factor_panel,2003-01-01
 reibor_6m,financial,monthly,level,factor_panel,2003-01-01
+gov_balance,fiscal,annual,level,bvar_only,2003-01-01
+gov_expenditure,fiscal,annual,dln_x100,bvar_only,2003-01-01
+gov_revenue,fiscal,annual,dln_x100,bvar_only,2003-01-01
 gdp,gdp,quarterly,dln_x100,bvar_only,2003-01-01
 atvinnuthatttaka,labour,quarterly,level,factor_panel,2003-02-01
 hlutfall_starfandi,labour,quarterly,level,factor_panel,2003-02-01
 launavisitala,labour,quarterly,dln_x100,core_block,2003-01-01
+unemployment_count,labour,monthly,dln_x100,factor_panel,2003-01-01
 unemployment_rate,labour,monthly,level,factor_panel,2003-01-01
 unnar_stundir,labour,quarterly,dln_x100,factor_panel,2003-02-01
 credit_businesses,money_credit,monthly,dln_x100,factor_panel,2003-01-01
@@ -62,6 +67,9 @@ credit_households,money_credit,monthly,dln_x100,factor_panel,2003-01-01
 il_mortgage_share,money_credit,monthly,level,core_block,2007-07-01
 m3,money_credit,monthly,dln_x100,factor_panel,2003-01-01
 new_mortgage_lending,money_credit,monthly,level,factor_panel,2013-01-01
+ppi,ppi,monthly,dln_x100,factor_panel,2006-01-01
+ppi_domestic,ppi,monthly,dln_x100,factor_panel,2006-01-01
+ppi_export,ppi,monthly,dln_x100,factor_panel,2006-01-01
 adrar_vorur_til_afthreyingar,prices,monthly,dln_x100,factor_panel,2003-01-01
 afengir_drykkir_tobak_og_fikniefni,prices,monthly,dln_x100,factor_panel,2003-01-01
 byggingarvisitala,prices,monthly,dln_x100,factor_panel,2003-01-01
@@ -79,4 +87,11 @@ matur_og_oafengir_drykkir,prices,monthly,dln_x100,factor_panel,2003-01-01
 rekstur_farartaekja_til_einkanota,prices,monthly,dln_x100,factor_panel,2003-01-01
 tryggingar,prices,monthly,dln_x100,factor_panel,2003-01-01
 veitingahus_og_gistithjonusta,prices,monthly,dln_x100,factor_panel,2003-01-01
+resinv_current,residential_investment,quarterly,dln_x100,factor_panel,2003-01-01
+resinv_volume_sa,residential_investment,quarterly,dln_x100,factor_panel,2003-01-01
+accommodation,retail_turnover,bimonthly,dln_x100,factor_panel,2008-01-01
+food_service,retail_turnover,bimonthly,dln_x100,factor_panel,2008-01-01
+retail,retail_turnover,bimonthly,dln_x100,factor_panel,2008-01-01
 farthegar,tourism,monthly,dln_x100,factor_panel,2003-01-01
+vacancies,vacancies,quarterly,dln_x100,factor_panel,2019-01-01
+vacancy_rate,vacancies,quarterly,level,factor_panel,2019-01-01

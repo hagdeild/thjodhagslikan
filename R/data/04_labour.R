@@ -25,8 +25,10 @@ vmst_url <- "https://island.is/s/vinnumalastofnun/maelabord-og-toelulegar-upplys
 # The file is published on vmst_url via a hashed CDN asset URL that changes on every
 # update, so we scrape the current link from the page rather than hard-coding it.
 # Sheet "G2": row 7 holds Excel date serials, row 9 ("Landið allt") holds the monthly
-# unemployment rate for the whole country, from column C onward. The sheet expands one
-# column to the right each month; data begin in February 2000 and are monthly.
+# unemployment RATE for the whole country, and row 43 ("Landið allt", under the
+# "Atvinnulausir, meðalfjöldi á mánuði" header) holds the monthly registered
+# unemployment COUNT (DATA_GAPS #31). Both run from column C onward; the sheet
+# expands one column to the right each month; data begin in February 2000.
 
 atvinnuleysi_tbl <-
   local({
@@ -45,17 +47,26 @@ atvinnuleysi_tbl <-
       readxl::read_excel(tmp, sheet = "G2", col_names = FALSE)
     ))
 
-    # Row 9 ("Landið allt"), columns C (3) onward, hold the unemployment rate (as a fraction)
-    rate <- suppressWarnings(as.numeric(unlist(
-      raw[9, -(1:2)],
-      use.names = FALSE
-    )))
-    rate <- rate[!is.na(rate)]
+    row_vals <- function(r) {
+      v <- suppressWarnings(as.numeric(unlist(raw[r, -(1:2)], use.names = FALSE)))
+      v[!is.na(v)]
+    }
+
+    # Row 9: unemployment rate (fraction). Row 43: average unemployed count.
+    rate  <- row_vals(9)
+    count <- row_vals(43)
 
     # Monthly axis from February 2000 (matches the date serials in row 7)
     date <- seq(as.Date("2000-02-01"), by = "month", length.out = length(rate))
 
-    tibble(date = date, unemployment_rate = rate)
+    # Count may trail the rate by a month; pad to common length on the date axis.
+    length(count) <- length(rate)
+
+    tibble(
+      date = date,
+      unemployment_rate  = rate,
+      unemployment_count = count
+    )
   })
 
 # 2.2.0 Launavísitala ----

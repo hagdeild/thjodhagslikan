@@ -151,6 +151,12 @@ husnaedi_tbl <-
   )
 
 
+# 2.6.0 PPI ----
+# PPI (producer price index) is pulled separately in 02_prices_ppi.R ->
+# ppi.parquet (headline + domestic + export, from Hagstofa VIS08000). It is NOT
+# folded into prices.parquet here. (A half-wired ppi_tbl that was never joined to
+# the saved output used to live here — removed to avoid two competing PPI paths.)
+
 # 3.0.0 SAVE ----
 
 cpi_tbl |>
