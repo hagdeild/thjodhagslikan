@@ -1,7 +1,7 @@
 series,source,native_freq,transform,panel_role,first_obs
 aluminum,aluminium_and_marine_exports,monthly,dln_x100,factor_panel,2003-01-01
 marine,aluminium_and_marine_exports,monthly,dln_x100,factor_panel,2003-01-01
-registrations,car_registrations,monthly,dln_x100,factor_panel,2004-01-01
+registrations,car_registrations,monthly,dln_x100,factor_panel,2003-01-01
 domestic_card_turnover,card_turnover,monthly,dln_x100,factor_panel,2003-01-01
 foreign_card_turnover,card_turnover,monthly,dln_x100,factor_panel,2003-01-01
 employment,employment_count,monthly,dln_x100,factor_panel,2005-01-01

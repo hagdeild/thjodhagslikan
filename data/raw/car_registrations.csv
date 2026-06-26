@@ -1,4 +1,16 @@
 period,registrations,source
+2003-01-01,739,backcast_arima
+2003-02-01,725,backcast_arima
+2003-03-01,950,backcast_arima
+2003-04-01,887,backcast_arima
+2003-05-01,1363,backcast_arima
+2003-06-01,1851,backcast_arima
+2003-07-01,1085,backcast_arima
+2003-08-01,744,backcast_arima
+2003-09-01,848,backcast_arima
+2003-10-01,740,backcast_arima
+2003-11-01,683,backcast_arima
+2003-12-01,627,backcast_arima
 2004-01-01,837,historical_pdf
 2004-02-01,838,historical_pdf
 2004-03-01,1108,historical_pdf

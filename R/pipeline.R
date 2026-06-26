@@ -18,8 +18,9 @@
 # Conventions:
 #   • Panel starts 2003-01 (the spec sample floor). Series that start later keep
 #     leading NAs (no fabricated pre-history — the estimators tolerate ragged
-#     left edges; see PROJECT_SPEC.md). car_registrations starts 2004-01, so it
-#     carries 12 leading NAs by design (a backcast may fill these later).
+#     left edges; see PROJECT_SPEC.md). car_registrations source data starts
+#     2004-01; 2003 is filled by a reversed-ARIMA backcast (source="backcast_arima"
+#     in the raw parquet, built by car_registrations_05_backcast.R).
 #   • Internal gaps (holes inside a series' active span) ARE filled before
 #     transforms — type-aware: index/quantity series by spline, rate/step-function
 #     series by last-observation-carried-forward. Leading NAs are left untouched.

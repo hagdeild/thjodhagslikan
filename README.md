@@ -119,8 +119,8 @@ on log wage, log CPI, log EER.
 1. **Feed the panel to the engines** — wire `mf_bvar_favar.R` (FAVAR indicator panel =
    sections A–I minus core-block minus interpolated GDP) and the structural BVAR
    (core block + breakeven) to `data/processed/panel_monthly.parquet`.
-2. **Backcast car registrations** to 2003 (reversed-ARIMA or regression on other monthly
-   series) to remove the 12 leading NAs that gate the fully-populated window at 2004-01.
+2. ✅ **Backcast car registrations** to 2003 — done (reversed-ARIMA,
+   `car_registrations_05_backcast.R`; 2003 rows tagged `source="backcast_arima"`).
 3. **Finish the data layer** — fiscal section (I) handling; optionally add deferred series.
 4. Resolve the structural-BVAR open issues; test the 7th-variable (current account) addition.
 5. Forecast evaluation: out-of-sample RMSE/MAE of MF-BVAR-FAVAR vs the Tier-2 benchmarks
