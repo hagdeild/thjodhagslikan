@@ -80,11 +80,12 @@ is the *native* frequency (the monthly panel is assembled in `pipeline.R`).
 | 70 | VIX | FRED |
 | — | SE/NO/DK policy rates | respective CBs |
 
-### H. Expectations — `expectations.parquet`
+### H. Expectations — `expectations.parquet`, `gallup_confidence.parquet`
 | # | Series | Source | Freq |
 |---|--------|--------|------|
 | 73, 74 | Household + business inflation expectations | Seðlabanki MEASURES xlsx (chromote) | Q |
 | 75 | Market-participants expectations (+ 5-horizon policy-rate path, bond breakevens) | Seðlabanki MARKET xlsx | Q |
+| 76 | **Consumer confidence** (Gallup Væntingavísitala, VVG) | Gallup public Looker embed (`09_gallup_confidence.R`, chromote) | M, 2001- |
 
 ### I. Fiscal — `fiscal.parquet`
 | # | Series | Source | Freq | History |
@@ -130,13 +131,17 @@ is the *native* frequency (the monthly panel is assembled in `pipeline.R`).
 
 | # | Series | Where it lives | Blocker |
 |---|--------|----------------|---------|
-| 76 | Consumer confidence (Gallup Væntingavísitala, monthly since 2001) | CB **Hagvísar Chapter II** ("Framleiðsla og eftirspurn") | That chapter is an **embedded Power BI report** (`app.powerbi.com/view?r=…`). Audited dead ends: OECD SDMX (Iceland absent), Hagstofa PxWeb, gagnabanki `/api/config`, CB XML feed — none carry it. The `/library/…/HV_…II….xlsx` path serves only the Veva SPA shell to non-interactive fetches. Getting the data needs a fragile Power BI query-API scrape. |
-| 77 | Business sentiment (400-largest-firms survey, quarterly) | Same Hagvísar Chapter II Power BI embed | Same Power BI blocker. SA publishes per-round PDF press releases only. |
+| 77 | Business sentiment (400-largest-firms survey, quarterly) | CB **Hagvísar Chapter II** ("Framleiðsla og eftirspurn") Power BI embed | Power BI export is undocumented/version-fragile; SA publishes per-round PDF press releases only. (Gallup's own Looker dashboard — used for #76 — is consumer-only.) |
 
-If #76/#77 become priorities: the path is a chromote session that opens the
-specific Power BI embed, drives its export, and captures the client-side Blob —
-the same *class* of scrape as `06_money_credit.R`/`09_expectations.R`, but harder
-because Power BI's data export is undocumented and version-fragile.
+If #77 becomes a priority: either scrape the CB Hagvísar Power BI embed (the same
+*class* of headless scrape as #76, but Power BI's data export is harder than
+Looker's), or check whether Gallup publishes a separate business-sentiment Looker
+dashboard like the consumer VVG one.
+
+*(#76 consumer confidence was on this list last session; it is now WIRED — see §1.H
+and §5. Gallup exposes the VVG via a public Looker embed whose tile query CSV
+(`/explore/<slug>.csv`) is fetchable from inside the embed iframe session — no Power
+BI scrape needed after all.)*
 
 ---
 
@@ -150,6 +155,7 @@ because Power BI's data export is undocumented and version-fragile.
 | `R/data/04_labour_extras.R` | `vacancies.parquet`, `employment_count.parquet` | #33, #31-adjacent |
 | `R/data/08_fiscal.R` | `fiscal.parquet` | #79/#80/#81 |
 | `R/data/05_retail_rates.R` | `retail_rates.parquet` | #40/#41/#46 |
+| `R/data/09_gallup_confidence.R` | `gallup_confidence.parquet` | #76 |
 | `R/data/04_labour.R` (edited) | adds `unemployment_count` to `labour.parquet` | #31 |
 
 All pulled from the Hagstofa PxWeb JSON API (POST query → CSV) except the

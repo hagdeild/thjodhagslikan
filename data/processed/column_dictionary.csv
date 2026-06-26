@@ -55,6 +55,7 @@ reibor_6m,financial,monthly,level,factor_panel,2003-01-01
 gov_balance,fiscal,annual,level,bvar_only,2003-01-01
 gov_expenditure,fiscal,annual,dln_x100,bvar_only,2003-01-01
 gov_revenue,fiscal,annual,dln_x100,bvar_only,2003-01-01
+gallup_confidence,gallup_confidence,monthly,level,factor_panel,2003-01-01
 gdp,gdp,quarterly,dln_x100,bvar_only,2003-01-01
 atvinnuthatttaka,labour,quarterly,level,factor_panel,2003-02-01
 hlutfall_starfandi,labour,quarterly,level,factor_panel,2003-02-01

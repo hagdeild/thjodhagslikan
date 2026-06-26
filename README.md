@@ -99,7 +99,7 @@ on log wage, log CPI, log EER.
 | Data: labour / external / expectations | wired (04/08/09 → labour, external, expectations parquets) |
 | Data: fiscal (I) | annual only; enters via mixed-frequency block |
 | `data/raw/` parquets | populated for wired sources |
-| `data/processed/` panel | wired — `panel_monthly{,_levels}.parquet` + `column_dictionary.csv` (282 mo, 99 series) |
+| `data/processed/` panel | wired — `panel_monthly{,_levels}.parquet` + `column_dictionary.csv` (282 mo, 100 series) |
 | `pipeline.R` | wired — reads `data/raw/`, interpolates Q→M, applies transforms, writes `data/processed/` |
 | MF-BVAR-FAVAR engine | complete |
 | Structural BVAR | running, open issues (below) |

@@ -90,17 +90,18 @@ Wired: 55 (ISK/EUR), 56 (ISK/USD), 57 (TWI narrow), 58 (REER). Plus ISK/GBP as b
 Wired: 59 (Brent USD), 61 (FAO food), 62 (aluminium USD), 63 (euro HICP), 64 (euro IP),
 65 (ECB MRO), 66 (Fed funds), 67 (US CPI), 68 (GSCPI), 70 (VIX), + SE/NO/DK rates.
 
-## H. Expectations & surveys (6) — 3 wired, 2 deferred (Power BI), 1 unavailable
+## H. Expectations & surveys (6) — 4 wired, 1 deferred, 1 unavailable
 
 | # | Series | Status | Notes |
 |---|--------|--------|-------|
-| 76 | Consumer confidence index | 🟡 DEFERRED | **Gallup Væntingavísitala** lives only in CB **Hagvísar Chapter II** ("Framleiðsla og eftirspurn"), which is an **embedded Power BI report** (`app.powerbi.com/view?r=…`). Audited: not in OECD SDMX (Iceland absent), not in Hagstofa PxWeb, not in gagnabanki `/api/config`, not in the XML feed. The `/library/…/HV_…II….xlsx` path serves only the Veva SPA shell to non-interactive fetches. Extracting needs a fragile Power BI query-API scrape. Gallup itself = PDF only. |
-| 77 | Business sentiment / confidence | 🟡 DEFERRED | Same Hagvísar Chapter II Power BI embed (400-largest-firms survey, quarterly). SA publishes per-round PDF press releases only. |
+| 76 | Consumer confidence index | 🟢 WIRED | **Gallup Væntingavísitala (VVG)** — `09_gallup_confidence.R` → `gallup_confidence.parquet`, monthly 2001-03-. Pulled from Gallup's public Looker embed (`gallup.is/data/geytenbq/sso/`) via chromote: render the embed, capture the VVG tile's Looker query slug live, fetch `/explore/<slug>.csv` from inside the iframe session. (The CB Hagvísar Power BI embed also carries it but is harder; Gallup's own Looker is the cleaner primary source.) |
+| 77 | Business sentiment / confidence | 🟡 DEFERRED | 400-largest-firms survey — in CB Hagvísar Ch.II Power BI embed (quarterly); SA publishes per-round PDF only. Gallup's VVG dashboard (now wired for #76) is consumer-only. Not yet pulled. |
 | 78 | PMI or equivalent | 🔴 UNAVAILABLE | **No Icelandic PMI exists** — S&P Global/Markit does not run one for Iceland; aggregator "Iceland PMI" pages are empty stubs. The Hagvísar demand/business-survey series are the only output-tendency proxy (and are Power-BI-locked, see #77). |
 
 Wired: 73 (household inflation expectations), 74 (business inflation expectations),
 75 (market participants' expectations — plus the 5-horizon policy-rate path and bond
-breakevens). All in `expectations.parquet`.
+breakevens) in `expectations.parquet`; 76 (Gallup consumer confidence) in
+`gallup_confidence.parquet`.
 
 ## I. Fiscal (3) — all 3 wired (annual)
 
@@ -114,16 +115,15 @@ breakevens). All in `expectations.parquet`.
 
 ## Summary by status (updated 2026-06-25 — see DATA_INVENTORY.md)
 
-This session wired/resolved 16 of the former backlog items (#15, 22, 31, 33, 40, 41,
-46, 79, 80, 81 wired; #24, 25 proxied; #13, 14 derived; #26, 78 audited to
+This session wired/resolved 17 of the former backlog items (#15, 22, 31, 33, 40, 41,
+46, 76, 79, 80, 81 wired; #24, 25 proxied; #13, 14 derived; #26, 78 audited to
 unavailable). Remaining not-wired:
 
 - 🔴 **UNAVAILABLE (7)**: 42 (corporate lending rate — PDF only); 52 (OMXI), 53 (CDS), 54 (FCI); 69 (Baltic Dry); 26 (electricity — annual/snapshot only); 78 (no Icelandic PMI exists). *No action unless a paid/manual source is accepted.*
-- 🟡 **DEFERRED — wireable but hard (2)**: 76, 77 (Gallup consumer/business confidence — locked in a CB Hagvísar **Power BI embed**; needs a fragile PBI query-API scrape). *The realistic remaining backlog.*
+- 🟡 **DEFERRED — wireable but hard (1)**: 77 (business sentiment / 400-largest-firms survey — CB Hagvísar **Power BI embed**, quarterly; SA per-round PDFs). *The realistic remaining backlog.*
 - 🟢 **DERIVED (5)**: 13, 14 (CPI goods/services from COICOP), 60 (Brent-ISK), 72 (Nordic avg), 81 (now also pulled directly). *Computed at assembly, not gaps.*
 - ⚪ **PROXY/COVERED (5)**: 17 (import price → EER), 23 (IP → aluminium+marine), 24, 25 (building → residential investment), 71 (fish → marine export price).
 
-**Remaining highest-value gap**: 76 consumer confidence (Gallup) — only the Power BI
-embed stands between us and it. The retail mortgage + deposit rates (40/41/46) are now
-wired from the Seðlabanki "Bankavextir" table; only the corporate lending rate (42)
-remains PDF-only in §D.
+**Remaining gaps of note**: 77 business sentiment (Power BI / PDF) is the only
+wireable survey left; 42 corporate lending rate is the last §D rate (PDF only). The
+rest are genuinely unavailable without a paid feed.

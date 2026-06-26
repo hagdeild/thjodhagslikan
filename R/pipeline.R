@@ -115,6 +115,7 @@ fiscal      <- rd("fiscal")
 # them be_survey_* so the two don't collide on the join.
 expect      <- rd("expectations") |>
   rename_with(\(x) str_replace(x, "^breakeven_", "be_survey_"))
+gallup      <- rd("gallup_confidence")   # #76 Væntingavísitala, monthly
 
 
 # 3.0.0 FREQUENCY: quarterly -> monthly ----
@@ -192,7 +193,7 @@ fiscal_monthly <- quarterly_cols_to_monthly(
 sources <- list(
   prices, ppi, card, tourism, alu_marine, car_reg, retail_monthly, resinv_monthly,
   financial, retail_rates, money, exchange, external, labour_monthly, employment,
-  vacancies_monthly, fiscal_monthly, gdp_monthly, expect_monthly
+  vacancies_monthly, fiscal_monthly, gdp_monthly, expect_monthly, gallup
 )
 
 panel_raw <-
@@ -304,7 +305,8 @@ source_of <- c(
   setNames("employment_count", "employment"),
   setNames(rep("vacancies", length(vacancies_cols)), vacancies_cols),
   setNames(rep("fiscal", length(fiscal_cols)), fiscal_cols),
-  setNames(rep("expectations", length(expect_cols)), expect_cols)
+  setNames(rep("expectations", length(expect_cols)), expect_cols),
+  setNames("gallup_confidence", "gallup_confidence")
 )
 
 column_dictionary <-
