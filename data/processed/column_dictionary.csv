@@ -1,6 +1,11 @@
 series,source,native_freq,transform,panel_role,first_obs
 aluminum,aluminium_and_marine_exports,monthly,dln_x100,factor_panel,2003-01-01
 marine,aluminium_and_marine_exports,monthly,dln_x100,factor_panel,2003-01-01
+ca_ex_old_banks,balance_of_payments,quarterly,level,bvar_only,2008-10-01
+current_account,balance_of_payments,quarterly,level,bvar_only,2003-01-01
+current_account_headline,balance_of_payments,quarterly,level,bvar_only,2003-01-01
+services_balance,balance_of_payments,quarterly,level,bvar_only,2003-01-01
+trade_balance,balance_of_payments,quarterly,level,bvar_only,2003-01-01
 registrations,car_registrations,monthly,dln_x100,factor_panel,2003-01-01
 domestic_card_turnover,card_turnover,monthly,dln_x100,factor_panel,2003-01-01
 foreign_card_turnover,card_turnover,monthly,dln_x100,factor_panel,2003-01-01

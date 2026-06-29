@@ -50,6 +50,7 @@ fetchers <- c(
   "R/data/07_exchange.R",
   "R/data/08_external.R",
   "R/data/08_fiscal.R",
+  "R/data/08_balance_of_payments.R",   # current account / trade balance (chromote + xlsx)
   "R/data/09_expectations.R",
   "R/data/09_gallup_confidence.R"
 )

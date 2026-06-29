@@ -111,6 +111,7 @@ labour      <- rd("labour")
 vacancies   <- rd("vacancies")
 employment  <- rd("employment_count")
 fiscal      <- rd("fiscal")
+bop         <- rd("balance_of_payments")   # quarterly current account / trade balance
 # `breakeven_5y` also exists in financial.parquet (the bond-spread breakeven,
 # spec §45). The expectations-file breakevens are a separate survey family; prefix
 # them be_survey_* so the two don't collide on the join.
@@ -188,13 +189,22 @@ fiscal_monthly <- quarterly_cols_to_monthly(
   fiscal_cols
 )
 
+# 3.7.0 Balance of payments (current account etc.): QUARTERLY -> monthly spline.
+#       Flows that legitimately go ≤0, so kept as levels (see 6.0.0); like GDP/
+#       fiscal they are bvar_only (splined quarterly must not feed monthly factors).
+bop_cols <- setdiff(names(bop), "date")
+bop_monthly <- quarterly_cols_to_monthly(
+  bop |> filter(if_any(all_of(bop_cols), \(x) !is.na(x))),
+  bop_cols
+)
+
 
 # 4.0.0 ALIGN to one monthly grid ----
 
 sources <- list(
   prices, ppi, card, tourism, alu_marine, car_reg, retail_monthly, resinv_monthly,
   financial, retail_rates, money, exchange, external, labour_monthly, employment,
-  vacancies_monthly, fiscal_monthly, gdp_monthly, expect_monthly, gallup
+  vacancies_monthly, fiscal_monthly, bop_monthly, gdp_monthly, expect_monthly, gallup
 )
 
 panel_raw <-
@@ -273,7 +283,7 @@ panel_model <-
 # 7.0.0 COLUMN DICTIONARY ----
 
 # native frequency: which columns came from a sub-monthly source
-quarterly_native <- c("gdp", labour_q_cols, expect_cols, resinv_cols, vacancies_cols)
+quarterly_native <- c("gdp", labour_q_cols, expect_cols, resinv_cols, vacancies_cols, bop_cols)
 bimonthly_native <- retail_cols
 annual_native    <- fiscal_cols
 # panel role
@@ -283,7 +293,7 @@ annual_native    <- fiscal_cols
 # spuriously onto monthly factors — use the native-frequency series in the
 # VAR/BVAR block instead. (Quarterly sources like resinv/vacancies/labour follow
 # the existing convention and stay in factor_panel.)
-bvar_only  <- c("gdp", fiscal_cols)
+bvar_only  <- c("gdp", fiscal_cols, bop_cols)
 core_block <- c("policy_rate", "cpi_less_housing", "twi", "il_mortgage_share",
                 "launavisitala")  # VAR/BVAR core observables (activity = gdp via Q)
 
@@ -306,6 +316,7 @@ source_of <- c(
   setNames("employment_count", "employment"),
   setNames(rep("vacancies", length(vacancies_cols)), vacancies_cols),
   setNames(rep("fiscal", length(fiscal_cols)), fiscal_cols),
+  setNames(rep("balance_of_payments", length(bop_cols)), bop_cols),
   setNames(rep("expectations", length(expect_cols)), expect_cols),
   setNames("gallup_confidence", "gallup_confidence")
 )

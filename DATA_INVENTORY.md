@@ -94,6 +94,28 @@ is the *native* frequency (the monthly panel is assembled in `pipeline.R`).
 | 80 | **Government expenditure** | Hagstofa THJ05211 | annual | 1980– |
 | 81 | **Net fiscal balance** | Hagstofa THJ05211 (pulled directly) | annual | 1980– |
 
+### External balance — `balance_of_payments.parquet` (model-driven addition, not in the 81-series spec)
+The current account is the linchpin of the wages/credit → imports → CA deficit → ISK
+→ CPI channel for the scenario engine; it was missing from the original spec. Source:
+Seðlabanki "Greiðslujöfnuður við útlönd" (`08_balance_of_payments.R`), quarterly
+1995Q1–present. chromote discovers the per-quarter `library/?itemid=` xlsx, then a
+plain GET downloads it; sheet "Lóðrétt", row 6 headers.
+
+| Series | What | Notes |
+|--------|------|-------|
+| `current_account` | **underlying** current account (model-ready) | ex-old-banks where it differs (2008Q4–2015Q4), headline otherwise |
+| `current_account_headline` | headline CA | raw, includes failed-bank distortion |
+| `trade_balance` | goods-trade balance (Vöruskiptajöfnuður) | |
+| `services_balance` | services balance (Þjónusta) | |
+| `ca_ex_old_banks` | CA excl. failed banks, as published | blank pre-2008Q4, 0 from 2016Q1 |
+
+**Old-banks adjustment:** the 2008 failed banks' winding-up (slitameðferð) created
+huge accrued-but-unpaid foreign primary-income distortions in measured CA. The
+"án áhrifa gömlu bankanna" column strips them (50–90 bn.kr swings 2008Q4–2015Q4),
+is blank before, and exactly 0 from 2016Q1 (winding-up finished → headline == underlying).
+All five enter the panel as quarterly→monthly-spline, **level**, **bvar_only** (a flow
+that goes ≤0, and splined quarterly must not feed the monthly FAVAR factors).
+
 ---
 
 ## 2. Proxies — pulled something *adjacent* to what the spec named
