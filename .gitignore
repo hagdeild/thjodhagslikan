@@ -2,3 +2,6 @@
 *.html
 
 *.pdf
+
+# Runtime refresh logs (tools/run_daily.ps1)
+/logs/
